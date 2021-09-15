@@ -1,0 +1,42 @@
+@mixin default-link{
+  color: $link;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: max(.0625rem);
+  text-underline-offset: .1em;
+  padding-top:rem(11);
+  padding-bottom:rem(11);
+  line-height: 1.5;
+
+  @media(min-width:$break-md){
+    padding-top:rem(10);
+    padding-bottom:rem(10);
+  }
+
+  &:hover,
+  &:focus{
+    text-decoration-thickness: max(.1875rem);
+  }
+}
+
+@mixin reverse-link{
+  color: $light;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: max(.0625rem);
+  text-underline-offset: .1em;
+  line-height: 1.5;
+
+  padding-top:rem(11);
+  padding-bottom:rem(11);
+
+  @media(min-width:$break-md){
+    padding-top:rem(10);
+    padding-bottom:rem(10);
+  }
+
+  &:hover,
+  &:focus{
+    text-decoration-thickness: max(.1875rem);
+  }
+}

@@ -1,0 +1,5 @@
+.flex-justify-around--xs{
+  @media(min-width:$break-xs){
+    @include justify-around;
+  }
+}

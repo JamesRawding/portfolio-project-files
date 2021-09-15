@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-sm){
+  .grid-parent{
+    &--sm-5-7{
+      @include five-seven;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+//these cards only used in the DS
+.card-link{
+  @include card-dark;
+  background-color: $link;
+}
+
+.card-accent{
+  @include card-dark;
+  background-color: $accent;
+}
+
+.card-focus{
+  @include card-light;
+  background-color: $focus;
+}
+
+
+//Code example styling
+
+.example-container{
+  @include border-radius;
+  overflow: auto;
+  width: 100%;
+  max-height: rem(400);
+  @include margin-top-m;
+  display: grid;
+}
+
+pre{
+  line-height: 1.2;
+  font-family: monospace;
+  @include font-size-xs-desktop;
+  display: inherit;
+}

@@ -1,0 +1,37 @@
+{% block content %}
+<div id="accessibilityOptions" class="modal fullscreen-modal accessibility-options " role="complementary">
+  <div class="container">
+    <div class="full-width flex-row flex-justify-end">
+    <button id="closeAccessibilityModal" class="closeModalBtn close-modal-btn" type="button" name="button">
+      <svg viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+          <line x1="1" y1="11" x2="11" y2="1" stroke="" stroke-width="2"></line>
+          <line x1="1" y1="1" x2="11" y2="11" stroke="" stroke-width="2"></line>
+      </svg>
+      <span class="close-modal-btn__text">Close Options</span>
+    </button>
+  </div>
+  <span class="h1 display-block margin-top-l">Accessibility Options</span>
+  <p>Here are some options to help improve your experience</p>
+
+  <div class="grid-parent grid-parent--sm-6-6 margin-top-l">
+    <div>
+      <span class="h2 display-block">Colour</span>
+      <div class="flex-row flex-justify-start margin-top-m">
+        <button id="colorDefault" class="cta cta--secondary" type="button" name="button">Default</button>
+        <button id="colorDark" class="cta cta--secondary margin-left-s" type="button" name="button">Dark</button>
+        <button id="colorLight" class="cta cta--secondary background-light margin-left-s" type="button" name="button">Light</button>
+        <button id="colorYellow" class="cta cta--yellow margin-left-s" type="button" name="button">Yellow</button>
+      </div>
+    </div>
+    <div>
+      <span class="h2 display-block">Font Size</span>
+      <div class="flex-row flex-justify-start flex-align-start margin-top-m">
+        <button id="fontSizeDefault" class="cta cta--secondary font-size-s-desktop" type="button" name="button">Default</button>
+        <button id="fontSizeLarge" class="cta cta--secondary margin-left-s font-size-m-desktop" type="button" name="button">Large</button>
+        <button id="fontSizeExtraLarge" class="cta cta--secondary margin-left-s font-size-l-desktop" type="button" name="button">Extra Large</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+{% endblock %}

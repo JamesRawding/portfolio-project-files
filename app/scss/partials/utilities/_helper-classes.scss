@@ -1,0 +1,524 @@
+//helper classes
+
+.full-width{
+  width:100%;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position:absolute;
+}
+
+.overflow-auto{
+  overflow: auto;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left--break-xs{
+  @media(min-width:$break-xs){
+    text-align: left;
+  }
+}
+
+.text-left--break-sm{
+  @media(min-width:$break-sm){
+    text-align: left;
+  }
+}
+
+.text-left--break-md{
+  @media(min-width:$break-md){
+    text-align: left;
+  }
+}
+
+.text-left--break-lg{
+  @media(min-width:$break-lg){
+    text-align: left;
+  }
+}
+
+.text-right--break-xs{
+  @media(min-width:$break-xs){
+    text-align: right;
+  }
+}
+
+.text-right--break-sm{
+  @media(min-width:$break-sm){
+    text-align: right;
+  }
+}
+
+.text-right--break-md{
+  @media(min-width:$break-md){
+    text-align: right;
+  }
+}
+
+.text-right--break-lg{
+  @media(min-width:$break-lg){
+    text-align: right;
+  }
+}
+
+.text-center--break-xs{
+  @media(min-width:$break-xs){
+    text-align: center;
+  }
+}
+
+.text-center--break-sm{
+  @media(min-width:$break-sm){
+    text-align: center;
+  }
+}
+
+.text-center--break-md{
+  @media(min-width:$break-md){
+    text-align: center;
+  }
+}
+
+.text-center--break-lg{
+  @media(min-width:$break-lg){
+    text-align: center;
+  }
+}
+
+
+
+.display-block{
+  display: block;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+.display-inline{
+  display: inline;
+}
+
+.margin-0{
+  margin: 0;
+}
+
+.margin-top-0{
+  margin-top: 0;
+}
+
+.margin-left-auto{
+  margin-left:auto;
+}
+
+.margin-right-auto{
+  margin-right:auto;
+}
+
+.margin-0-auto{
+  margin: 0 auto;
+}
+
+.margin-xxs{
+  @include margin-xxs;
+}
+
+.margin-xs{
+  @include margin-xs;
+}
+
+.margin-s{
+  @include margin-s;
+}
+
+.margin-m{
+  @include margin-m;
+}
+
+.margin-l{
+  @include margin-l;
+}
+
+.margin-xl{
+  @include margin-xl;
+}
+
+.margin-xxl{
+  @include margin-xxl;
+}
+
+.margin-top-xxs{
+  @include margin-top-xxs;
+}
+
+.margin-top-xs{
+  @include margin-top-xs;
+}
+
+.margin-top-s{
+  @include margin-top-s;
+}
+
+.margin-top-m{
+  @include margin-top-m;
+}
+
+.margin-top-l{
+  @include margin-top-l;
+}
+
+.margin-top-xl{
+  @include margin-top-xl;
+}
+
+.margin-top-xxl{
+  @include margin-top-xxl;
+}
+
+.margin-right-xxs{
+  @include margin-right-xxs;
+}
+
+.margin-right-xs{
+  @include margin-right-xs;
+}
+
+.margin-right-s{
+  @include margin-right-s;
+}
+
+.margin-right-m{
+  @include margin-right-m;
+}
+
+.margin-right-l{
+  @include margin-right-l;
+}
+
+.margin-right-xl{
+  @include margin-right-xl;
+}
+
+.margin-right-xxl{
+  @include margin-right-xxl;
+}
+
+.margin-bottom-xxs{
+  @include margin-bottom-xxs;
+}
+
+.margin-bottom-xs{
+  @include margin-bottom-xs;
+}
+
+.margin-bottom-s{
+  @include margin-bottom-s;
+}
+
+.margin-bottom-m{
+  @include margin-bottom-m;
+}
+
+.margin-bottom-l{
+  @include margin-bottom-l;
+}
+
+.margin-bottom-xl{
+  @include margin-bottom-xl;
+}
+
+.margin-bottom-xxl{
+  @include margin-bottom-xxl;
+}
+
+.margin-left-xxs{
+  @include margin-left-xxs;
+}
+
+.margin-left-xs{
+  @include margin-left-xs;
+}
+
+.margin-left-s{
+  @include margin-left-s;
+}
+
+.margin-left-m{
+  @include margin-left-m;
+}
+
+.margin-left-l{
+  @include margin-left-l;
+}
+
+.margin-left-xl{
+  @include margin-left-xl;
+}
+
+.margin-left-xxl{
+  @include margin-left-xxl;
+}
+
+
+.padding-0{
+  padding: 0;
+}
+
+.padding-xxs{
+  @include padding-xxs;
+}
+
+.padding-xs{
+  @include padding-xs;
+}
+
+.padding-s{
+  @include padding-s;
+}
+
+.padding-m{
+  @include padding-m;
+}
+
+.padding-l{
+  @include padding-l;
+}
+
+.padding-xl{
+  @include padding-xl;
+}
+
+.padding-xxl{
+  @include padding-xxl;
+}
+
+
+.padding-top-xxs{
+  @include padding-top-xxs;
+}
+
+.padding-top-xs{
+  @include padding-top-xs;
+}
+
+.padding-top-s{
+  @include padding-top-s;
+}
+
+.padding-top-m{
+  @include padding-top-m;
+}
+
+.padding-top-l{
+  @include padding-top-l;
+}
+
+.padding-top-xl{
+  @include padding-top-xl;
+}
+
+.padding-top-xxl{
+  @include padding-top-xxl;
+}
+
+
+.padding-right-xxs{
+  @include padding-right-xxs;
+}
+
+.padding-right-xs{
+  @include padding-right-xs;
+}
+
+.padding-right-s{
+  @include padding-right-s;
+}
+
+.padding-right-m{
+  @include padding-right-m;
+}
+
+.padding-right-l{
+  @include padding-right-l;
+}
+
+.padding-right-xl{
+  @include padding-right-xl;
+}
+
+.padding-right-xxl{
+  @include padding-right-xxl;
+}
+
+.padding-bottom-xxs{
+  @include padding-bottom-xxs;
+}
+
+.padding-bottom-xs{
+  @include padding-bottom-xs;
+}
+
+.padding-bottom-s{
+  @include padding-bottom-s;
+}
+
+.padding-bottom-m{
+  @include padding-bottom-m;
+}
+
+.padding-bottom-l{
+  @include padding-bottom-l;
+}
+
+.padding-bottom-xl{
+  @include padding-bottom-xl;
+}
+
+.padding-bottom-xxl{
+  @include padding-bottom-xxl;
+}
+
+.padding-left-xxs{
+  @include padding-left-xxs;
+}
+
+.padding-left-xs{
+  @include padding-left-xs;
+}
+
+.padding-left-s{
+  @include padding-left-s;
+}
+
+.padding-left-m{
+  @include padding-left-m;
+}
+
+.padding-left-l{
+  @include padding-left-l;
+}
+
+.padding-left-xl{
+  @include padding-left-xl;
+}
+
+.padding-left-xxl{
+  @include padding-left-xxl;
+}
+
+.card-padding{
+  @include card-padding;
+}
+
+//colours
+
+.background-light{
+  @include background-light;
+}
+
+.background-dark{
+  @include background-dark;
+}
+
+.background-medium{
+  @include background-medium;
+}
+
+.background-grey{
+  @include background-grey;
+}
+
+.background-yellow{
+  @include background-yellow;
+}
+
+.color-light{
+  color: $light;
+}
+
+.color-dark{
+  color: $dark;
+}
+
+.color-grey{
+  color: $grey;
+}
+
+.color-medium{
+  color: $medium;
+}
+
+.color-link{
+  color: $link;
+}
+
+.color-accent{
+  color: $accent;
+}
+
+.font-size-xxl-mobile{
+ @include font-size-xxl-mobile
+}
+
+.font-size-xl-mobile{
+ @include font-size-xl-mobile
+}
+
+.font-size-l-mobile{
+ @include font-size-l-mobile
+}
+
+.font-size-m-mobile{
+ @include font-size-m-mobile
+}
+
+.font-size-s-mobile{
+ @include font-size-s-mobile
+}
+
+.font-size-xs-mobile{
+ @include font-size-xs-mobile
+}
+
+.font-size-xxl-desktop{
+ @include font-size-xxl-desktop
+}
+
+.font-size-xl-desktop{
+ @include font-size-xl-desktop
+}
+
+.font-size-l-desktop{
+ @include font-size-l-desktop
+}
+
+.font-size-m-desktop{
+ @include font-size-m-desktop
+}
+
+.font-size-s-desktop{
+ @include font-size-s-desktop
+}
+
+.font-size-xs-desktop{
+ @include font-size-xs-desktop
+}

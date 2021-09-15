@@ -1,0 +1,5 @@
+.flex-justify-center--sm{
+  @media(min-width:$break-sm){
+    @include justify-center;
+  }
+}

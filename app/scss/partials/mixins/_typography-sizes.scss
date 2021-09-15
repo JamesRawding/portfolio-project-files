@@ -1,0 +1,98 @@
+
+//font sizes
+
+@mixin large-heading-mobile{
+	font-size: rem(47);
+}
+
+@mixin h1-mobile{
+	font-size: rem(37);
+}
+
+@mixin h2-mobile{
+	font-size: rem(29);
+}
+
+@mixin h3-mobile{
+	font-size: rem(23);
+}
+
+@mixin copy-mobile{
+	font-size: rem(18);
+}
+
+@mixin small-copy-mobile{
+	font-size: rem(14);
+}
+
+@mixin font-size-xxl-mobile{
+	font-size: rem(47);
+}
+
+@mixin font-size-xl-mobile{
+	font-size: rem(37);
+}
+
+@mixin font-size-l-mobile{
+	font-size: rem(29);
+}
+
+@mixin font-size-m-mobile{
+	font-size: rem(23);
+}
+
+@mixin font-size-s-mobile{
+	font-size: rem(18);
+}
+
+@mixin font-size-xs-mobile{
+	font-size: rem(14);
+}
+
+@mixin large-heading-desktop{
+	font-size: rem(55);
+}
+
+@mixin h1-desktop{
+	font-size: rem(43);
+}
+
+@mixin h2-desktop{
+	font-size: rem(34);
+}
+
+@mixin h3-desktop{
+	font-size: rem(27);
+}
+
+@mixin copy-desktop{
+	font-size: rem(21);
+}
+
+@mixin small-copy-desktop{
+	font-size: rem(17);
+}
+
+@mixin font-size-xxl-desktop{
+	font-size: rem(55);
+}
+
+@mixin font-size-xl-desktop{
+	font-size: rem(43);
+}
+
+@mixin font-size-l-desktop{
+	font-size: rem(34);
+}
+
+@mixin font-size-m-desktop{
+	font-size: rem(27);
+}
+
+@mixin font-size-s-desktop{
+	font-size: rem(21);
+}
+
+@mixin font-size-xs-desktop{
+	font-size: rem(17);
+}

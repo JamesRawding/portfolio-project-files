@@ -1,0 +1,5 @@
+.flex-align-center--sm{
+  @media(min-width:$break-sm){
+    @include align-center;
+  }
+}

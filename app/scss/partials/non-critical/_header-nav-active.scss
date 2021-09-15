@@ -1,0 +1,91 @@
+.header-nav{
+  &__modal{
+    z-index: 2;
+    ul{
+      margin-left: 0;
+      padding: $spacing-m 0;
+      li{
+        list-style-type: none;
+
+        &:first-of-type{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__segmented-controls{
+    max-width: rem(600);
+    margin: 0 auto;
+
+    .segmented-controls{
+      overflow: auto;
+      @include margin-top-l;
+
+      @media(min-width:$break-md){
+        @include margin-top-xl;
+      }
+
+      &__btn{
+        background: transparent;
+        border: none;
+        padding:rem(10) 0;
+        @include bold;
+        color: $grey;
+        @include transition-all;
+        @include margin-right-l;
+        font-size: inherit;
+        font-family: inherit;
+        border-bottom: rem(2) solid transparent;
+        text-align: left;
+        flex:0 0 auto;
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+
+        &:focus{
+          outline:none;
+        }
+
+        &--active{
+          color: $light;
+          border-color:$accent;
+        }
+
+
+        @media(min-width:$break-md){
+          margin-right: 0;
+
+          &:focus,
+          &:hover{
+            color: $light;
+            border-color:$accent;
+          }
+
+          @media(min-width:$break-md){
+            &:focus{
+              @include focus;
+              outline-style:auto;
+              outline-width: medium;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .segmented-control-panel{
+    &:focus{
+      outline:none;
+    }
+
+    @media(min-width:$break-md){
+      &:focus{
+        @include focus;
+        outline-style:auto;
+        outline-width: medium;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.grid-parent{
+  @include grid-parent;
+
+  & > div,
+  & > section{
+    min-width: 0;
+  }
+}

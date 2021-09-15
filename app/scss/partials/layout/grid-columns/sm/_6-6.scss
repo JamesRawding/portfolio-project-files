@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-sm){
+  .grid-parent{
+    &--sm-6-6{
+        @include six-six;
+    }
+  }
+}

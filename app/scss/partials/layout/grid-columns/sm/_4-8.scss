@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-sm){
+  .grid-parent{
+    &--sm-4-8{
+      @include four-eight;
+    }
+  }
+}

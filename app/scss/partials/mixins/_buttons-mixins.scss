@@ -1,0 +1,149 @@
+@mixin cta-padding{
+  padding:rem(11) rem(13);
+
+  @media(min-width:$break-md){
+    padding:rem(12) rem(18);
+  }
+}
+
+@mixin btn{
+  @include transition-all;
+  @include border-radius;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  line-height: 1;
+
+  &:disabled,
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+
+@mixin cta{
+  @include btn;
+  @include cta-padding;
+}
+
+@mixin cta--primary{
+  background-color: $accent;
+  border: rem(2) solid $accent;
+  color: $light;
+
+  @media(min-width:$break-md){
+    &:hover,
+    &:focus{
+      border-color: $medium;
+      background-color: $medium;
+    }
+  }
+}
+
+@mixin cta--secondary{
+  background-color: transparent;
+  border: rem(2) solid $light;
+  color: $light;
+
+  @media(min-width:$break-md){
+    &:hover,
+    &:focus{
+      background-color: $light;
+      color:$dark;
+    }
+  }
+}
+
+@mixin cta--tertiary{
+  background-color: transparent;
+  border: rem(2) solid $medium;
+  color: $medium;
+
+  @media(min-width:$break-md){
+    &:hover,
+    &:focus{
+      background-color: $medium;
+      color:$light;
+    }
+  }
+}
+
+@mixin cta--yellow{
+  background-color: yellow;
+  border: rem(2) solid yellow;
+  color: $dark;
+
+  @media(min-width:$break-md){
+    &:hover,
+    &:focus{
+      border-color:$dark;
+      background-color: $dark;
+      color:$light;
+    }
+  }
+}
+
+@mixin nav-trigger{
+  @include btn;
+  @include cta--secondary;
+  padding:rem(11) rem(13);
+}
+
+@mixin close-modal-btn{
+  @include cta;
+  @include cta--secondary;
+  width: rem(44);
+  height: rem(44);
+
+  // &:before{
+  //   content: 'X';
+  // }
+
+  svg{
+    width: rem(12);
+    height: rem(12);
+    stroke: $light;
+    @include transition-all;
+
+    @media(min-width:$break-md){
+      @include margin-right-s;
+    }
+  }
+
+  @media(min-width:$break-md){
+    width: auto;
+    height: auto;
+    @include flex-row;
+    @include align-center;
+    @include cta-padding;
+
+    &:hover,
+    &:focus{
+      svg{
+        stroke: $dark;
+      }
+    }
+  }
+
+  .close-modal-btn__text{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    @media(min-width:$break-md){
+      position: relative;
+      clip: auto;
+      height: auto;
+      width:auto;
+      margin: 0;
+
+    }
+  }
+}

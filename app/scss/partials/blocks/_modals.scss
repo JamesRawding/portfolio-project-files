@@ -1,0 +1,7 @@
+.modal{
+  @include modal-hidden;
+}
+
+.fullscreen-modal--active{
+  @include fullscreen-modal--active;
+}

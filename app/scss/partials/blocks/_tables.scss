@@ -1,0 +1,101 @@
+table{
+  table-layout: fixed;
+  overflow-x: auto;
+  width: 100%;
+  display: block;
+  border: rem(1) solid $medium;
+  @include border-radius;
+  position: relative;
+  -ms-overflow-style:-ms-autohiding-scrollbar;  /* IE and Edge */
+  scrollbar-width: thin;
+
+  @media(min-width: $break-sm){
+    display: table;
+    table-layout: auto;
+  }
+
+
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width: rem(10);
+  }
+
+  &::-webkit-scrollbar:horizontal {
+      height: rem(10);
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: rem(10);
+      border: rem(2) solid white; /* should match background, can't be transparent */
+      background-color: $accent;
+  }
+
+  &::-webkit-scrollbar-track {
+      background-color: #light;
+      border-radius: rem(10);
+  }
+
+  &:focus{
+    @include focus;
+  }
+
+  thead{
+
+
+    tr:last-of-type{
+      border-bottom: rem(1) solid $medium;
+    }
+
+    td{
+      @include bold;
+      position: relative;
+    }
+  }
+
+  th{
+    @include bold;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  td{
+    line-height: 1.5;
+  }
+
+  tr{
+    border-bottom: rem(1) solid $medium;
+    position: relative;
+    &:last-of-type{
+      border: 0;
+    }
+  }
+
+  th,td{
+    @include padding-m;
+    position: relative;
+    width: 100%;
+    min-width: rem(200);
+
+    @media(min-width: $break-sm){
+      width: auto;
+      min-width: 0;
+    }
+
+
+  }
+
+  tr:last-of-type td{
+    border:none;
+  }
+
+}
+
+p + table,
+h2 + table,
+h3 + table{
+  @include margin-top-l;
+}

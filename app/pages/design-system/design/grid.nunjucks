@@ -1,0 +1,154 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/a11y-dark.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Design</span>
+      <h1>Grid</h1>
+      <p>Columns can easily be created based on a 12 column grid by using the following classes (Based on CSS grid). The following classes can be used to align items inside a flex parent.</p>
+      <p>NOTE: These classes can be appended with breakpoint modifiers to allow different a amount of columns on different screen sizes.</p>
+
+
+<h2 class="margin-top-xl">One Column</h2>
+
+<div class="grid-parent card-light card-shadow margin-top-l">
+  <div class="card-grey">
+    Grid Item
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;grid-parent&quot;&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+
+<hr class="hr-lg-spacing">
+
+<h2 class="margin-top-xl">Two Columns (50-50)</h2>
+
+<div class="grid-parent grid-parent--base-6-6 card-light card-shadow margin-top-l">
+  <div class="card-grey">
+    Grid Item
+  </div>
+  <div class="card-grey">
+    Grid Item
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;grid-parent grid-parent--base-6-6&quot;&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+
+<hr class="hr-lg-spacing">
+
+<h2 class="margin-top-xl">Three Columns (Thirds)</h2>
+
+<div class="grid-parent grid-parent--base-4-4-4 card-light card-shadow margin-top-l">
+  <div class="card-grey">
+    Grid Item
+  </div>
+  <div class="card-grey">
+    Grid Item
+  </div>
+  <div class="card-grey">
+    Grid Item
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;grid-parent grid-parent--base-4-4-4&quot;&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+
+<hr class="hr-lg-spacing">
+
+<h2 class="margin-top-xl">Two Columns (Offset)</h2>
+
+<div class="grid-parent grid-parent--base-5-7 card-light card-shadow margin-top-l">
+  <div class="card-grey">
+    Grid Item
+  </div>
+  <div class="card-grey">
+    Grid Item
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;grid-parent grid-parent--base-5-7&quot;&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+    &lt;div&gt;
+      Grid Item
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+
+
+
+
+    </section>
+  </div>
+
+
+</main>
+
+
+
+
+{% endblock %}

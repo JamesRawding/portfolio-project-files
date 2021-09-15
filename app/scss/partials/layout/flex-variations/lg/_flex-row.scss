@@ -1,0 +1,5 @@
+.flex-row--lg{
+  @media(min-width:$break-lg){
+    @include flex-row;
+  }
+}

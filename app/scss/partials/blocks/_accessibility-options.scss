@@ -1,0 +1,390 @@
+.accessibility-options-trigger{
+
+  position: absolute;
+  left: -200px;
+  top: rem(20);
+  z-index: 3;
+
+  &:focus{
+    left: rem(0);
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 1.5;
+    @include padding-m;
+    text-align: center;
+    top: rem(3);
+    border: none;
+  }
+
+}
+
+.accessibility-color-dark{
+  body,div,section,header,footer,main{
+    background-color: $dark;
+    color: $light;
+  }
+
+  span{
+    color: $light;
+  }
+
+  button,
+  .cta--yellow{
+    background-color: transparent;
+    border-color: $light;
+    color: $light;
+
+    &:hover,
+    &:focus{
+      background-color: $light;
+      color: $dark;
+      span{
+        color: $dark
+      }
+    }
+  }
+
+  .header-nav__primary-desktop-nav-item:hover{
+    border-color: $light;
+  }
+
+  .header-nav__primary-desktop-nav-item{
+    border-color: transparent;
+  }
+
+  .dev-pages-active li:last-of-type,
+  .exp-pages-active li:last-of-type,
+  .ds-pages-active li:last-of-type{
+    .header-nav__primary-desktop-nav-item{
+      border-color: $light;
+    }
+  }
+
+  .header-nav__segmented-controls .segmented-controls__btn{
+    color: $light;
+
+    &:hover{
+      color: $dark;
+      border-color: $light;
+    }
+
+    &--active{
+      border-color: $light;
+    }
+  }
+
+  .accordion__icon{
+    border-color: $light;
+  }
+
+  .accordion__trigger{
+    &:hover,
+    &:focus{
+      .accordion__icon{
+        border-color: $dark;
+      }
+    }
+  }
+
+  .card-grey,
+  .card-dark,
+  .card-light,
+  .card-medium{
+    border: rem(1) solid $light;
+  }
+
+  hr{
+    color: $light;
+    background-color: $light;
+  }
+
+  .reverse-link,
+  .default-link{
+    color: $light;
+  }
+
+  .skip-navigation-link{
+    color: $dark;
+  }
+}
+
+.accessibility-color-light{
+  body,div,section,header,footer,main{
+    background-color: $light;
+    color: $dark;
+  }
+
+  span{
+    color: $dark;
+  }
+
+  button,
+  .cta--yellow{
+    background-color: transparent;
+    border-color: $dark;
+    color: $dark;
+
+    &:hover,
+    &:focus{
+      background-color: $dark;
+      color: $light;
+      span{
+        color: $light
+      }
+    }
+  }
+
+  .header-nav__primary-desktop-nav-item{
+    border-color: transparent;
+  }
+
+  .dev-pages-active li:last-of-type,
+  .exp-pages-active li:last-of-type,
+  .ds-pages-active li:last-of-type{
+    .header-nav__primary-desktop-nav-item{
+      border-color: $dark;
+    }
+  }
+
+  .accordion__icon{
+    border-color: $dark;
+  }
+
+  .accordion__trigger{
+    &:hover,
+    &:focus{
+      .accordion__icon{
+        border-color: $light;
+      }
+    }
+  }
+
+  .card-grey,
+  .card-dark,
+  .card-light,
+  .card-medium{
+    border: rem(1) solid $dark;
+  }
+
+  hr{
+    color: $light;
+    background-color: $dark;
+  }
+
+  .close-modal-btn{
+    svg{
+      stroke:$dark;
+    }
+
+    &:hover,
+    &:focus{
+      svg{
+        stroke:$light;
+      }
+    }
+  }
+
+  .reverse-link,
+  .default-link{
+    color: $dark;
+  }
+
+  .header-nav__primary-desktop-nav-item{
+    color: $dark;
+  }
+
+  .sidebar-nav .accordion__icon{
+    border-color: $dark;
+  }
+
+  code{
+    background-color: $light !important;
+    color: $dark;
+  }
+
+  .desktop-logo svg text{
+    fill:$dark;
+  }
+
+  .header-nav__segmented-controls .segmented-controls__btn{
+    color: $dark;
+
+    &--active{
+      color: $dark;
+      border-color:$dark;
+    }
+  }
+
+  footer .reverse-link svg{
+    fill:$dark;
+  }
+}
+
+.accessibility-color-yellow{
+  body,div,section,header,footer,main{
+    background-color: yellow;
+    color: $dark;
+  }
+
+  span{
+    color: $dark;
+  }
+
+  button,
+  .cta--yellow{
+    background-color: transparent;
+    border-color: $dark;
+    color: $dark;
+
+    &:hover,
+    &:focus{
+      background-color: $dark;
+      color: yellow;
+
+      span{
+        color: yellow;
+      }
+    }
+  }
+
+  .sidebar-nav .accordion__icon{
+    border-color: $dark;
+  }
+
+
+
+  .header-nav__primary-desktop-nav-item{
+    border-color: transparent;
+    color: $dark;
+  }
+
+  .dev-pages-active li:last-of-type,
+  .exp-pages-active li:last-of-type,
+  .ds-pages-active li:last-of-type{
+    .header-nav__primary-desktop-nav-item{
+      border-color: $dark;
+    }
+  }
+
+  .header-nav__segmented-controls .segmented-controls__btn{
+    color: $dark;
+
+    &--active{
+      border-color: $dark;
+      color: $dark;
+    }
+  }
+
+  .accordion__icon{
+    border-color: $dark;
+  }
+
+  .accordion__trigger{
+    &:hover,
+    &:focus{
+      .accordion__icon{
+        border-color: yellow;
+      }
+    }
+  }
+
+
+  .card-grey,
+  .card-dark,
+  .card-light,
+  .card-medium{
+    border: rem(1) solid $dark;
+  }
+
+  hr{
+    color: $dark;
+    background-color: $dark;
+  }
+
+  .close-modal-btn{
+    svg{
+      stroke:$dark;
+    }
+
+    &:hover,
+    &:focus{
+      span{
+        color: yellow;
+      }
+      svg{
+        stroke:yellow;
+      }
+    }
+  }
+
+  .desktop-logo svg text{
+    fill:$dark;
+  }
+
+  .mobile-logo svg{
+    circle{
+      fill:$dark;
+    }
+
+    path,
+    rect{
+      fill:yellow;
+    }
+  }
+
+  footer .reverse-link svg{
+    fill:$dark;
+  }
+
+  .reverse-link,
+  .default-link{
+    color: $dark;
+  }
+
+  code{
+    color: yellow;
+
+    span{
+      color: yellow;
+    }
+  }
+}
+
+.accessibility-font-l{
+  font-size: 27px;
+
+  .sidebar-nav ul{
+    font-size: inherit;
+
+  }
+
+  .copy-small{
+    font-size: inherit;
+  }
+
+  pre{
+    font-size: inherit;
+  }
+}
+
+.accessibility-font-xl{
+  font-size: 34px;
+
+  .sidebar-nav ul{
+    font-size: inherit;
+
+  }
+
+  .copy-small{
+    font-size: inherit;
+  }
+
+  .header-nav__segmented-controls .segmented-controls__btn{
+    @include margin-right-l;
+  }
+
+  pre{
+    font-size: inherit;
+  }
+}

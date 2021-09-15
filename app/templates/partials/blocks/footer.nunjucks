@@ -1,0 +1,16 @@
+{% block content %}
+<footer>
+  <div class="container section-padding flex-col flex-wrap flex-align-center flex-row--med flex-justify-between--med flex-align-center--med">
+    <span>&copy James Rawding 2021</span>
+    <div class="margin-top-m">
+      <span class="flex-row flex-align-center">Contact me on
+        <a class="reverse-link margin-left-s" href="https://www.linkedin.com/in/james-rawding-a02a5a56/">
+          {# <img width="50" height="50" src="/images/linkedin-logo.svg" alt="" aria-hidden="true"> #}
+          <svg id="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img" focusable="false" aria-hidden="true"><path id="linkedin" d="M.36,2.1v50h50V2.1ZM17,41.69H10.77V18.77H17ZM13.9,16.13a3.68,3.68,0,1,1,3.65-3.68A3.67,3.67,0,0,1,13.9,16.13ZM42,41.69H35.77V30c0-7-8.33-6.49-8.33,0V41.69H21.19V18.77h6.25v3.68C30.35,17.06,42,16.66,42,27.6Z" transform="translate(-0.36 -2.1)"/></svg>
+          <span class="screen-reader-text">my Linkedin profile</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+{% endblock %}

@@ -1,0 +1,102 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Design</span>
+      <h1>Colour Scheme</h1>
+      <p>It’s important that background and foreground colours are accessible and have enough contrast to meet WCAG standards.</p>
+      <h2 class="margin-top-xl">Primary Pallette</h2>
+      <div class="grid-parent grid-parent--sm-6-6 margin-top-l">
+        <div class="card-dark">
+          <span class="display-block">Variable name = $dark</span>
+          <span class="display-block">Hex = #262626</span>
+          <hr>
+          <strong>Accessible Colours</strong>
+          <span class="display-block margin-top-m">$light (#FEFDFD)</span>
+          <span class="display-block">Small AAA - Large AAA</span>
+          <span class="display-block color-grey margin-top-m">$grey (#C9ABAB)</span>
+          <span class="display-block color-grey">Small AAA - Large AAA</span>
+        </div>
+
+        <div class="card-light card-shadow">
+          <span class="display-block">Variable name = $light</span>
+          <span class="display-block">Hex = #FEFDFD</span>
+          <hr>
+          <strong>Accessible Colours</strong>
+          <span class="display-block margin-top-m">$dark (#262626)</span>
+          <span class="display-block">Small AAA - Large AAA</span>
+          <span class="display-block color-medium margin-top-m">$medium (#595959)</span>
+          <span class="display-block color-medium">Small AA - Large AAA</span>
+          <span class="display-block color-link margin-top-m">$link (#037F9B)</span>
+          <span class="display-block color-link">Small AA - Large AAA</span>
+        </div>
+
+        <div class="card-medium">
+          <span class="display-block">Variable name = $medium</span>
+          <span class="display-block">Hex = #595959</span>
+          <hr>
+          <strong>Accessible Colours</strong>
+          <span class="display-block margin-top-m">$light (#FEFDFD)</span>
+          <span class="display-block">Small AAA - Large AAA</span>
+        </div>
+
+        <div class="card-grey">
+          <span class="display-block">Variable name = $grey</span>
+          <span class="display-block">Hex = #C9ABAB</span>
+          <hr class="hr-light">
+          <strong>Accessible Colours</strong>
+          <span class="display-block margin-top-m">$dark (#262626)</span>
+          <span class="display-block">Small AAA - Large AAA</span>
+        </div>
+      </div>
+
+      <hr class="hr-lg-spacing">
+
+      <h2>Secondary Pallette</h2>
+      <div class="grid-parent grid-parent--sm-6-6 margin-top-l">
+        <div class="card-link">
+          <span class="display-block">Variable name = $link</span>
+          <span class="display-block">Hex = #037F9B</span>
+          <hr>
+          <strong>Usage</strong>
+          <p>Used for links on $light background only. </p>
+        </div>
+        <div class="card-accent">
+          <span class="display-block">Variable name = $accent</span>
+          <span class="display-block">Hex = #4169E1</span>
+          <hr>
+          <strong>Usage</strong>
+          <p>Used sparingly to highlight elements such as active nav items. </p>
+        </div>
+        <div class="card-focus">
+          <span class="display-block">Variable name = $focus</span>
+          <span class="display-block">Hex = #FF9100</span>
+          <hr class="hr-medium">
+          <strong>Usage</strong>
+          <p>Used for focus states. </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+</main>
+
+
+
+
+{% endblock %}

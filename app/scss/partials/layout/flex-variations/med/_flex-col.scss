@@ -1,0 +1,5 @@
+.flex-col--med{
+  @media(min-width:$break-md){
+    @include flex-col;
+  }
+}

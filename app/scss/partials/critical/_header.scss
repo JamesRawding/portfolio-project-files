@@ -1,0 +1,29 @@
+.header{
+  @include background-dark;
+
+  &__inner{
+    @include padding-m;
+
+    @media(min-width:$break-md){
+      @include padding-l;
+    }
+  }
+
+  .mobile-logo{
+    @media(min-width:$break-md){
+      display:none;
+    }
+  }
+
+  .desktop-logo{
+    display: none;
+    @media(min-width:$break-md){
+      display: block;
+
+      a{
+        @include padding-top-s;
+        @include padding-bottom-s;
+      }
+    }
+  }
+}

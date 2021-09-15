@@ -1,0 +1,31 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+ {% set nav_class = "ds-pages-active" %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Introduction</span>
+      <h1>Design System</h1>
+      <p>Welcome to the Design System for my website. You may ask why a site this small would need a Design System, and to that I would say "why not?"</p>
+      <p>Building this system before starting the build of the rest of my site has made me plan for things that I may have only encountered further into the build. Because of this upfront planning the building of the site took very little effort.</p>
+    </section>
+  </div>
+
+
+</main>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,5 @@
+.flex-no-wrap--sm{
+  @media(min-width:$break-sm){
+    @include flex-no-wrap;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin card-medium{
+  @include border-radius;
+  @include card-padding;
+  @include background-medium;
+}
+
+@mixin card-light{
+  @include border-radius;
+  @include card-padding;
+  @include background-light;
+}
+
+@mixin card-dark{
+  @include border-radius;
+  @include card-padding;
+  @include background-dark;
+}
+
+@mixin card-grey{
+  @include border-radius;
+  @include card-padding;
+  @include background-grey;
+}

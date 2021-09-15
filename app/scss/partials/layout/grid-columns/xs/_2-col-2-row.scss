@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-xs){
+  .grid-parent{
+    &--xs-2-col-2-row{
+        @include two-col-two-row;
+    }
+  }
+}

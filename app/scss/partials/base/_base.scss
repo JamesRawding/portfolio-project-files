@@ -1,0 +1,152 @@
+html,body{
+  height: 100%;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+
+  @media(-webkit-device-pixel-ratio: 1.5){
+    //Windows 10 laptops scale the screens to 150% by default, this makes the whole site overly large, this should help to fix that (users will still be able to zoom in on the browser if they want to)
+    zoom:.98;
+  }
+}
+
+body{
+  //use this for sticky footer, @supports is to allow default fallback for IE10
+  @supports (display: grid) {
+    display: grid;
+    grid-template-rows: 0 auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+}
+
+main{
+  color: $dark;
+  min-width: 0;
+  margin-top:-1px;
+
+  @media(min-width:$break-md){
+    margin-top: 0;
+  }
+}
+
+.container{
+  max-width:rem(1200);
+  margin: 0 auto;
+}
+
+.small-container{
+  max-width:rem(1000);
+  margin: 0 auto;
+}
+
+.section-padding{
+  padding: $spacing-xl $spacing-m;
+
+  @media(min-width:$break-md){
+    padding: $spacing-xl $spacing-l;
+  }
+}
+
+.skip-navigation-link{
+  position: absolute;
+  left: -400px;
+  top: rem(20);
+  z-index: 3;
+
+  &:focus{
+    left: rem(0);
+    width: 100%;
+    background-color: $light;
+    @include padding-m;
+    text-align: center;
+    top: rem(3);
+  }
+}
+
+.screen-reader-text{
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.body-no-scroll{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+ul{
+  @include margin-left-m;
+  li{
+    list-style-type: disc;
+    @include margin-top-l;
+  }
+}
+
+ol{
+  @include margin-left-m;
+  li{
+    list-style-type:decimal;
+    @include margin-top-l;
+
+  }
+}
+
+.showHide{
+  display: none;
+
+  &--active{
+    display: block;
+  }
+}
+
+hr{
+  margin: $spacing-l 0;
+  border: 0;
+  color: $grey;
+  background-color: $grey;
+  height: rem(1);
+}
+
+.hr-light{
+  color: $light;
+  background-color: $light;
+}
+
+.hr-medium{
+  color: $medium;
+  background-color: $medium;
+}
+
+.hr-lg-spacing{
+  margin: $spacing-xl 0;
+}
+
+.hr-minus-margin{
+  margin-left: rem(-16);
+  margin-right: rem(-16);
+
+  @media(min-width:$break-md){
+    margin-left: rem(-32);
+    margin-right: rem(-32);
+  }
+}
+
+.full-height{
+  height: 100%;
+}

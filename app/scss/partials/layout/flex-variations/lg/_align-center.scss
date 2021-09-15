@@ -1,0 +1,5 @@
+.flex-align-center--lg{
+  @media(min-width:$break-lg){
+    @include align-center;
+  }
+}

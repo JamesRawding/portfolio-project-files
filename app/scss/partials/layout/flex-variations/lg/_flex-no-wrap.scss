@@ -1,0 +1,5 @@
+.flex-no-wrap--lg{
+  @media(min-width:$break-lg){
+    @include flex-no-wrap;
+  }
+}

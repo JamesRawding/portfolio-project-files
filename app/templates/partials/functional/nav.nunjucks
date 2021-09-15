@@ -1,0 +1,90 @@
+{% block content %}
+<nav class="header-nav">
+  <button id="headerNavTrigger" class="header-nav__trigger" type="button" name="button">Menu</button>
+
+
+  <ul class="header-nav__primary-desktop {{nav_class}}">
+    <li>
+      <button id="navItem1" class="modalTrigger header-nav__primary-desktop-nav-item" type="button" name="button" aria-expanded="false">Development</button>
+    </li>
+    <li>
+      <button id="navItem2" class="modalTrigger header-nav__primary-desktop-nav-item" type="button" name="button" aria-expanded="false">Experience</button>
+    </li>
+    <li>
+      <a class="header-nav__primary-desktop-nav-item" href="/design-system">Design System</a>
+    </li>
+  </ul>
+
+  <div id="headerNavModal" class="modal fullscreen-modal header-nav__modal">
+    <div class="container">
+      <div class="full-width flex-row flex-justify-end">
+        <button id="closeNavModal" class="closeModalBtn close-modal-btn" type="button" name="button">
+          <svg viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+              <line x1="1" y1="11"
+                    x2="11" y2="1"
+                    stroke=""
+                    stroke-width="2"/>
+              <line x1="1" y1="1"
+                    x2="11" y2="11"
+                    stroke=""
+                    stroke-width="2"/>
+          </svg>
+          <span class="close-modal-btn__text">Close Menu</span>
+        </button>
+      </div>
+
+      <div class="header-nav__segmented-controls">
+        <div class="segmented-controls flex-justify-between--med" role="tablist" aria-label="Navigation items">
+          <button class="segmented-controls__btn segmented-controls__btn--active" type="button" name="button" role="tab" aria-selected="true" aria-controls="nav-panel-1" id="nav-tab-1" tabindex="0">Development</button>
+          <button class="segmented-controls__btn" type="button" name="button" role="tab" aria-selected="false" aria-controls="nav-panel-2" id="nav-tab-2" tabindex="-1">Experience</button>
+          <button class="segmented-controls__btn" type="button" name="button" role="tab" aria-selected="false" aria-controls="nav-panel-3" id="nav-tab-3" tabindex="-1">Design System</button>
+        </div>
+
+        <div class="segmented-control-panel" id="nav-panel-1" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-1">
+        <ul>
+          <li>
+            <a class="reverse-link strong" href="/development/performance.html">Performance</a>
+            <p>Building fast web pages</p>
+          </li>
+          <li>
+            <a class="reverse-link strong" href="/development/design-system.html">Design System</a>
+            <p>Creating a design language</p>
+          </li>
+          <li>
+            <a class="reverse-link strong segmented-control-panel__last-link" href="/development/technologies.html">Technologies</a>
+            <p>From Nunjucks to NPM, see how I work</p>
+          </li>
+        </ul>
+        </div>
+        <div class="segmented-control-panel" id="nav-panel-2" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-2" hidden="">
+          <ul>
+            <li>
+              <a class="reverse-link strong" href="/experience/accessibility.html">Accessibility</a>
+              <p>Designing with accessibility in mind</p>
+            </li>
+            <li>
+              <a class="reverse-link strong" href="/experience/design-process.html">Design Process</a>
+              <p>From rapid prototypes to hifi designs</p>
+            </li>
+            <li>
+              <a class="reverse-link strong segmented-control-panel__last-link" href="/experience/conversion-rate-optimisation.html">CRO</a>
+              <p>Increasing conversion based on data</p>
+            </li>
+          </ul>
+        </div>
+        <div class="segmented-control-panel" id="nav-panel-3" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-3" hidden="">
+          <ul>
+            <li>
+              <a class="reverse-link strong" href="/design-system">Design System</a>
+              <p>Avoiding repetition and increasing consistency in design</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</nav>
+{% endblock %}

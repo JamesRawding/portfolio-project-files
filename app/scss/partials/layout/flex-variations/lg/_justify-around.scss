@@ -1,0 +1,5 @@
+.flex-justify-around--lg{
+  @media(min-width:$break-lg){
+    @include justify-around;
+  }
+}

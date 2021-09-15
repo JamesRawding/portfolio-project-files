@@ -1,0 +1,154 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Design</span>
+      <h1>Typography</h1>
+      <p>I have chosen the following typefaces and font sizes to be as accessible as possible.</p>
+      <h2>Font</h2>
+      <p>I use the Google Font "Rubik" in the following weights:</p>
+      <ul>
+        <li>Regular</li>
+        <li><strong>Medium</strong></li>
+      </ul>
+      <hr class="hr-lg-spacing">
+      <h2>Headings</h2>
+      <p>Avoid skipping heading levels: always start from &lt;h1&gt;, followed by &lt;h2&gt; and so on</p>
+      <table tabindex="0" summary="Mixins used to style heading tags.">
+        <thead>
+          <tr>
+            <th>Tag Name</th>
+            <th>Mixin Names</th>
+            <th>Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>H1</td>
+            <td>h1-mobile / h1-desktop</td>
+            <td>37px / 43px</td>
+          </tr>
+          <tr>
+            <td>H2</td>
+            <td>h2-mobile / h2-desktop</td>
+            <td>29px / 34px</td>
+          </tr>
+
+          <tr>
+            <td>H3</td>
+            <td>h3-mobile / h3-desktop</td>
+            <td>23px / 27px</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="hr-lg-spacing">
+      <h2>Sizes</h2>
+      <p>The following font sizes use REM values to help scale content with a user’s personal preferences.</p>
+      <h3>Mobile</h3>
+      <table tabindex="0" summary="Mobile font size mixins available.">
+        <thead>
+          <tr>
+            <th>Example</th>
+            <th>Mixin Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-size-xxl-mobile">Example Text</td>
+            <td>font-size-xxl-mobile</td>
+            <td>47px</td>
+          </tr>
+          <tr>
+            <td class="font-size-xl-mobile">Example Text</td>
+            <td>font-size-xl-mobile</td>
+            <td>37px</td>
+          </tr>
+          <tr>
+            <td class="font-size-l-mobile">Example Text</td>
+            <td>font-size-l-mobile</td>
+            <td>29px</td>
+          </tr>
+          <tr>
+            <td class="font-size-m-mobile">Example Text</td>
+            <td>font-size-m-mobile</td>
+            <td>23px</td>
+          </tr>
+          <tr>
+            <td class="font-size-s-mobile">Example Text</td>
+            <td>font-size-s-mobile</td>
+            <td>18px</td>
+          </tr>
+          <tr>
+            <td class="font-size-xs-mobile">Example Text</td>
+            <td>font-size-xs-mobile</td>
+            <td>14px</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Desktop</h3>
+      <table tabindex="0" summary="Desktop font size mixins available.">
+        <thead>
+          <tr>
+            <th>Example</th>
+            <th>Mixin Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-size-xxl-desktop">Example Text</td>
+            <td>font-size-xxl-desktop</td>
+            <td>55px</td>
+          </tr>
+          <tr>
+            <td class="font-size-xl-desktop">Example Text</td>
+            <td>font-size-xl-desktop</td>
+            <td>43px</td>
+          </tr>
+          <tr>
+            <td class="font-size-l-desktop">Example Text</td>
+            <td>font-size-l-desktop</td>
+            <td>34px</td>
+          </tr>
+          <tr>
+            <td class="font-size-m-desktop">Example Text</td>
+            <td>font-size-m-desktop</td>
+            <td>27px</td>
+          </tr>
+          <tr>
+            <td class="font-size-s-desktop">Example Text</td>
+            <td>font-size-s-desktop</td>
+            <td>21px</td>
+          </tr>
+          <tr>
+            <td class="font-size-xs-desktop">Example Text</td>
+            <td>font-size-xs-desktop</td>
+            <td>17px</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+
+</main>
+
+
+
+
+{% endblock %}

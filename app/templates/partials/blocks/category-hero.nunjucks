@@ -1,0 +1,8 @@
+{% block content %}
+  <section class="hero">
+    <div class="container section-padding grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
+      <h1>{{hero_heading}}<span>{{hero_subheading}}</span></h1>
+    </div>
+  </section>
+
+{% endblock %}

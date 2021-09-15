@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-sm){
+  .grid-parent{
+    &--sm-3-3-3-3{
+        @include three-three-three-three;
+    }
+  }
+}

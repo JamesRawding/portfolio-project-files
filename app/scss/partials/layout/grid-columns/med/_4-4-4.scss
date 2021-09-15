@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-md){
+  .grid-parent{
+    &--med-4-4-4{
+        @include four-four-four;
+    }
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The homepage of my website">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="cleartype" content="on">
+<title>James Rawding - Front-end Developer and Designer</title>
+
+
+<link rel="dns-prefetch" href="https://cloudinary.com">
+<link rel="preconnect" href="https://cloudinary.com">
+
+
+<link rel="preload" as="font" href="/fonts/Rubik-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/fonts/Rubik-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<script>
+!function(t,n){t=t||"docReady",n=n||window;var e=[],o=!1,d=!1;function a(){if(!o){o=!0;for(var t=0;t<e.length;t++)e[t].fn.call(window,e[t].ctx);e=[]}}function c(){
+  "complete"===document.readyState&&a()}n[t]=function(t,n){if("function"!=typeof t)throw new TypeError("callback for docReady(fn) must be a function");o?setTimeout(function(){
+    t(n)},1):(e.push({fn:t,ctx:n}),"complete"===document.readyState?setTimeout(a,1):d||(document.addEventListener?(document.addEventListener("DOMContentLoaded",a,!1),
+    window.addEventListener("load",a,!1)):(document.attachEvent("onreadystatechange",c),window.attachEvent("onload",a)),d=!0))}}("docReady",window);
+</script>
+
+<script async>
+  !function(e){"use strict";var n=function(n,t,o){function i(){a.addEventListener&&a.removeEventListener("load",i),a.media=o||"all"}var r,d=e.document,a=d.createElement("link");if(t)r=t;else{var l=(d.body||d.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var f=d.styleSheets;a.rel="stylesheet",a.href=n,a.media="only x",function e(n){if(d.body)return n();setTimeout(function(){e(n)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var s=function(e){for(var n=a.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){s(e)})};return a.addEventListener&&a.addEventListener("load",i),a.onloadcssdefined=s,s(i),a};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+</script>
+
+<link rel="stylesheet" href="/css/templates/index/critical.css">
+<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>
+
+<noscript>
+
+  <style>
+/* If JS is disabled */
+  </style>
+
+</noscript>
+
+
+</head>
+<body>
+  <nav>
+    <a href="#main-content" class="default-link skip-navigation-link">Skip to main content</a>
+    <button id="accessibilityOptionsTrigger" class="modalTrigger accessibility-options-trigger background-medium reverse-link" type="button" name="button" aria-expanded="false">Accessibility options</button>
+  </nav>
+  
+<div id="accessibilityOptions" class="modal fullscreen-modal accessibility-options " role="complementary">
+  <div class="container">
+    <div class="full-width flex-row flex-justify-end">
+    <button id="closeAccessibilityModal" class="closeModalBtn close-modal-btn" type="button" name="button">
+      <svg viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+          <line x1="1" y1="11" x2="11" y2="1" stroke="" stroke-width="2"></line>
+          <line x1="1" y1="1" x2="11" y2="11" stroke="" stroke-width="2"></line>
+      </svg>
+      <span class="close-modal-btn__text">Close Options</span>
+    </button>
+  </div>
+  <span class="h1 display-block margin-top-l">Accessibility Options</span>
+  <p>Here are some options to help improve your experience</p>
+
+  <div class="grid-parent grid-parent--sm-6-6 margin-top-l">
+    <div>
+      <span class="h2 display-block">Colour</span>
+      <div class="flex-row flex-justify-start margin-top-m">
+        <button id="colorDefault" class="cta cta--secondary" type="button" name="button">Default</button>
+        <button id="colorDark" class="cta cta--secondary margin-left-s" type="button" name="button">Dark</button>
+        <button id="colorLight" class="cta cta--secondary background-light margin-left-s" type="button" name="button">Light</button>
+        <button id="colorYellow" class="cta cta--yellow margin-left-s" type="button" name="button">Yellow</button>
+      </div>
+    </div>
+    <div>
+      <span class="h2 display-block">Font Size</span>
+      <div class="flex-row flex-justify-start flex-align-start margin-top-m">
+        <button id="fontSizeDefault" class="cta cta--secondary font-size-s-desktop" type="button" name="button">Default</button>
+        <button id="fontSizeLarge" class="cta cta--secondary margin-left-s font-size-m-desktop" type="button" name="button">Large</button>
+        <button id="fontSizeExtraLarge" class="cta cta--secondary margin-left-s font-size-l-desktop" type="button" name="button">Extra Large</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  
+<header class="header full-width">
+  <div class="header__inner container flex-row flex-justify-between flex-align-center">
+    <div class="mobile-logo">
+      <a href="/">
+        <span class="screen-reader-text">Homepage</span>
+        
+        <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" focusable="false" aria-hidden="true">
+            <title>Logo</title>
+            <defs>
+                <filter x="-15.0%" y="-15.0%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-1">
+                    <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                    <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                    <feColorMatrix values="0 0 0 0 0.149019608   0 0 0 0 0.149019608   0 0 0 0 0.149019608  0 0 0 0.0442304278 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+                    <feMerge>
+                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <circle id="path-2" cx="25" cy="25" r="25"></circle>
+                <filter x="-3.0%" y="-3.0%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+                    <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                    <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                    <feColorMatrix values="0 0 0 0 0.149019608   0 0 0 0 0.149019608   0 0 0 0 0.149019608  0 0 0 0.0501504111 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                </filter>
+            </defs>
+            <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Asset-2" filter="url(#filter-1)" fill-rule="nonzero">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="#FEFDFD" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M39.7368421,34.9052632 L34.8736842,26.5052632 C36.1723149,26.1636154 37.3282552,25.4169553 38.1736842,24.3736842 C38.9842105,23.3526316 39.3894737,22.0315789 39.3894737,20.4105263 C39.3894737,18.2210526 38.6947368,16.5684211 37.3052632,15.4526316 C35.9157895,14.3368421 34.0315789,13.7789474 31.6526316,13.7789474 L13.6342105,13.7789474 C13.4396091,13.7722694 13.2509624,13.8466451 13.1132774,13.98433 C12.9755925,14.122015 12.9012167,14.3106618 12.9078947,14.5052632 L12.9078947,15.7894737 C12.9012167,15.9840751 12.9755925,16.1727218 13.1132774,16.3104068 C13.2509624,16.4480918 13.4396091,16.5224675 13.6342105,16.5157895 L23.2657895,16.5157895 L23.2657895,27.7263158 C23.2657895,29.4807018 22.8447368,30.8842105 22.0026316,31.9368421 C21.1605263,32.9894737 19.9394737,33.5157895 18.3394737,33.5157895 C17.5314881,33.5255566 16.7286162,33.3863921 15.9710526,33.1052632 C15.2794755,32.845768 14.6710943,32.403805 14.2105263,31.8263158 C13.7154703,31.161673 13.4296309,30.364621 13.3894737,29.5368421 C13.3569983,29.3388278 13.265242,29.1553153 13.1263158,29.0105263 C12.9780117,28.8692743 12.7782383,28.7950728 12.5736842,28.8052632 L10.8552632,28.8052632 C10.6650174,28.7970173 10.4805948,28.8719389 10.35,29.0105263 C10.2255097,29.1427841 10.1575319,29.3183934 10.1604314,29.5 C10.1763713,30.5314969 10.4246351,31.5461404 10.8868421,32.4684211 C11.3144984,33.2962214 11.9245795,34.0160811 12.6710526,34.5736842 C13.4386622,35.1413907 14.3064626,35.5592206 15.2289474,35.8052632 C16.2224054,36.0730725 17.2474102,36.2058452 18.2763158,36.2001849 C20.0026316,36.2001849 21.4657895,35.8578947 22.6657895,35.1736842 C23.8600885,34.4955973 24.8270049,33.4792364 25.4447368,32.2526316 C26.1247385,30.8688693 26.4605704,29.3413759 26.4236842,27.8 L26.4236842,27.0105263 L31.8421053,27.0105263 L36.4210526,35.0315789 C36.5551156,35.2310363 36.7028378,35.4209648 36.8631579,35.6 C37.0723076,35.8052846 37.3606266,35.9090794 37.6526316,35.8842105 L39.1684211,35.8842105 C39.339858,35.8828702 39.5040575,35.8149256 39.6263158,35.6947368 C39.7558831,35.5843139 39.8308402,35.4228678 39.8315789,35.2526316 C39.8271781,35.1310906 39.794756,35.0122097 39.7368421,34.9052632 Z M31.5263158,24.3263158 L26.4236842,24.3263158 L26.4236842,16.4315789 L31.5342105,16.4315789 C33.1342105,16.4315789 34.3184211,16.7684211 35.0868421,17.4421053 C35.8552632,18.1157895 36.2394737,19.0947368 36.2394737,20.3789474 C36.2394737,21.6842105 35.85,22.6684211 35.0710526,23.3315789 C34.2921053,23.9947368 33.1131579,24.3263158 31.5342105,24.3263158 L31.5263158,24.3263158 Z" id="Shape" fill="#262626"></path>
+                    <rect id="Rectangle" fill="#262626" x="19.4736842" y="24.3421053" width="5.26315789" height="2.63157895" rx="1.31578947"></rect>
+                </g>
+            </g>
+        </svg>
+      </a>
+    </div>
+    <div class="desktop-logo">
+      <a class="flex-row padding-top-s padding-bottom-s" href="/"><span class="screen-reader-text">Homepage</span>
+        <svg width="207px" height="32px" viewBox="0 0 207 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" focusable="false" aria-hidden="true">
+            <title>desktop-logo</title>
+            <g id="desktop-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="RubikRoman-Medium, Rubik" font-size="27" font-weight="400">
+                <text id="James-Rawding" fill="#FEFDFD">
+                    <tspan x="0" y="25">James Rawding</tspan>
+                </text>
+            </g>
+        </svg>
+      </a>
+    </div>
+      
+<nav class="header-nav">
+  <button id="headerNavTrigger" class="header-nav__trigger" type="button" name="button">Menu</button>
+
+
+  <ul class="header-nav__primary-desktop ">
+    <li>
+      <button id="navItem1" class="modalTrigger header-nav__primary-desktop-nav-item" type="button" name="button" aria-expanded="false">Development</button>
+    </li>
+    <li>
+      <button id="navItem2" class="modalTrigger header-nav__primary-desktop-nav-item" type="button" name="button" aria-expanded="false">Experience</button>
+    </li>
+    <li>
+      <a class="header-nav__primary-desktop-nav-item" href="/design-system">Design System</a>
+    </li>
+  </ul>
+
+  <div id="headerNavModal" class="modal fullscreen-modal header-nav__modal">
+    <div class="container">
+      <div class="full-width flex-row flex-justify-end">
+        <button id="closeNavModal" class="closeModalBtn close-modal-btn" type="button" name="button">
+          <svg viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+              <line x1="1" y1="11"
+                    x2="11" y2="1"
+                    stroke=""
+                    stroke-width="2"/>
+              <line x1="1" y1="1"
+                    x2="11" y2="11"
+                    stroke=""
+                    stroke-width="2"/>
+          </svg>
+          <span class="close-modal-btn__text">Close Menu</span>
+        </button>
+      </div>
+
+      <div class="header-nav__segmented-controls">
+        <div class="segmented-controls flex-justify-between--med" role="tablist" aria-label="Navigation items">
+          <button class="segmented-controls__btn segmented-controls__btn--active" type="button" name="button" role="tab" aria-selected="true" aria-controls="nav-panel-1" id="nav-tab-1" tabindex="0">Development</button>
+          <button class="segmented-controls__btn" type="button" name="button" role="tab" aria-selected="false" aria-controls="nav-panel-2" id="nav-tab-2" tabindex="-1">Experience</button>
+          <button class="segmented-controls__btn" type="button" name="button" role="tab" aria-selected="false" aria-controls="nav-panel-3" id="nav-tab-3" tabindex="-1">Design System</button>
+        </div>
+
+        <div class="segmented-control-panel" id="nav-panel-1" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-1">
+        <ul>
+          <li>
+            <a class="reverse-link strong" href="/development/performance.html">Performance</a>
+            <p>Building fast web pages</p>
+          </li>
+          <li>
+            <a class="reverse-link strong" href="/development/design-system.html">Design System</a>
+            <p>Creating a design language</p>
+          </li>
+          <li>
+            <a class="reverse-link strong segmented-control-panel__last-link" href="/development/technologies.html">Technologies</a>
+            <p>From Nunjucks to NPM, see how I work</p>
+          </li>
+        </ul>
+        </div>
+        <div class="segmented-control-panel" id="nav-panel-2" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-2" hidden="">
+          <ul>
+            <li>
+              <a class="reverse-link strong" href="/experience/accessibility.html">Accessibility</a>
+              <p>Designing with accessibility in mind</p>
+            </li>
+            <li>
+              <a class="reverse-link strong" href="/experience/design-process.html">UX/UI Design Process</a>
+              <p>From rapid prototypes to hifi designs</p>
+            </li>
+            <li>
+              <a class="reverse-link strong segmented-control-panel__last-link" href="/experience/conversion-rate-optimisation.html">CRO</a>
+              <p>Increasing conversion based on data</p>
+            </li>
+          </ul>
+        </div>
+        <div class="segmented-control-panel" id="nav-panel-3" role="tabpanel" tabindex="0" aria-labelledby="nav-tab-3" hidden="">
+          <ul>
+            <li>
+              <a class="reverse-link strong" href="/design-system">Design System</a>
+              <p>Avoiding repetition and increasing consistency in design</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</nav>
+
+
+  </div>
+
+</header>
+
+
+  
+<main id="main-content">
+  
+  <section class="background-dark hero">
+    <div class="container section-padding grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
+      <h1>Design System<span class="display-block color-grey"></span></h1>
+    </div>
+  </section>
+
+
+
+  <section class="small-container section-padding">
+    <h2>Pattern Audit</h2>
+    <p>The first step was identifying all of the patterns across the site, seeing which ones could be unified and then breaking them down into individual components. When all the patterns had been broken down the next step was to create these components in Sketch.</p>
+    <hr class="hr-spacing-lg container">
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+
+  
+<footer>
+  <div class="container section-padding flex-col flex-wrap flex-align-center flex-row--med flex-justify-between--med flex-align-center--med">
+    <span>&copy James Rawding 2021</span>
+    <div class="margin-top-m">
+      <span class="flex-row flex-align-center">Contact me on
+        <a class="reverse-link margin-left-s" href="https://www.linkedin.com/in/james-rawding-a02a5a56/">
+          
+          <svg id="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img" focusable="false" aria-hidden="true"><path id="linkedin" d="M.36,2.1v50h50V2.1ZM17,41.69H10.77V18.77H17ZM13.9,16.13a3.68,3.68,0,1,1,3.65-3.68A3.67,3.67,0,0,1,13.9,16.13ZM42,41.69H35.77V30c0-7-8.33-6.49-8.33,0V41.69H21.19V18.77h6.25v3.68C30.35,17.06,42,16.66,42,27.6Z" transform="translate(-0.36 -2.1)"/></svg>
+          <span class="screen-reader-text">my Linkedin profile</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <script defer src="../../js/main.js"></script>
+</body>
+</html>

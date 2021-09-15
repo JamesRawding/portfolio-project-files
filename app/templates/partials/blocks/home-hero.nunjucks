@@ -1,0 +1,9 @@
+{% block content %}
+  <section class="hero">
+    <div class="container section-padding grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
+      <h1>Hi, I'm James <span>Front-end Developer and Designer</span></h1>
+      <img src="https://res.cloudinary.com/dgddraffq/image/upload/v1631606935/hero-test_bbld5r.jpg" alt="">
+    </div>
+  </section>
+
+{% endblock %}

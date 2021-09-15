@@ -1,0 +1,62 @@
+
+$grid-column-gap: $spacing-l;
+
+
+
+@mixin two-col-two-row{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@mixin four-col-one-row{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+@mixin six-six{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin four-four-four{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin three-three-three-three{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin three-nine{
+  grid-template-columns: 3fr 9fr;
+}
+
+@mixin four-eight{
+  grid-template-columns: 4fr 8fr;
+}
+
+@mixin seven-five{
+  grid-template-columns: 7fr 5fr;
+}
+
+@mixin five-seven{
+  grid-template-columns: 5fr 7fr;
+}
+
+@mixin eight-four{
+  grid-template-columns: 8fr 4fr;
+}
+
+@mixin twelve{
+  display: block;
+  width:100%;
+}
+
+
+@mixin grid-parent{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  //single column by default
+  grid-template-rows: auto;
+  grid-column-gap: $grid-column-gap;
+  grid-row-gap: $grid-column-gap;
+}

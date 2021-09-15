@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-xs){
+  .grid-parent{
+    &--xs-9-3{
+      @include nine-three;
+    }
+  }
+}

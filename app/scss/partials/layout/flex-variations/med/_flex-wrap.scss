@@ -1,0 +1,5 @@
+.flex-wrap--med{
+  @media(min-width:$break-md){
+    @include flex-wrap;
+  }
+}

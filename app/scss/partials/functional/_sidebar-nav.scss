@@ -1,0 +1,90 @@
+.sidebar-nav-container{
+  background-color: $medium;
+  color: $light;
+  padding: $spacing-l $spacing-m;
+
+  @media(min-width:$break-md){
+    @include padding-l;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom:0;
+      width: 100%;
+      left: -100%;
+      background: $medium;
+    }
+  }
+}
+
+.sidebar-nav-trigger{
+  @media(min-width:$break-md){
+    display: none;
+  }
+}
+
+.sidebar-nav{
+  @include padding-top-l;
+  @media(min-width: $break-md){
+    display: block;
+    padding-top: 0;
+  }
+
+  ul{
+    margin-left: 0;
+
+    @media(min-width:$break-md){
+      @include small-copy-desktop;
+    }
+
+    li{
+      list-style-type: none;
+
+      &:first-of-type{
+        @include margin-top-m;
+      }
+    }
+
+    .reverse-link{
+      @media(min-width:$break-md){
+        padding: rem(12) 0;
+      }
+    }
+
+    .sidebar-nav-item--active{
+      text-decoration-thickness: max(.1875rem);
+    }
+  }
+
+  .accordion__icon{
+    border: solid $light;
+    border-width: 0 2px 2px 0;
+    top:rem(23);
+
+    @media(min-width:$break-md){
+      top: rem(27);
+    }
+  }
+
+  .accordion__trigger[aria-expanded="true"]{
+    .accordion__icon {
+      top: rem(28);
+
+      @media(min-width:$break-md){
+        top:rem(32);
+      }
+    }
+  }
+
+  .accordion__panel{
+    padding-bottom: 0;
+  }
+
+  .accordion strong:last-of-type{
+    .accordion__trigger{
+      border-bottom: none;
+    }
+  }
+}

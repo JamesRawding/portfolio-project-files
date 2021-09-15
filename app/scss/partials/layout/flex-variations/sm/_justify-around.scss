@@ -1,0 +1,5 @@
+.flex-justify-around--sm{
+  @media(min-width:$break-sm){
+    @include justify-around;
+  }
+}

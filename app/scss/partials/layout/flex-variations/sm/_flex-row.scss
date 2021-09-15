@@ -1,0 +1,5 @@
+.flex-row--sm{
+  @media(min-width:$break-sm){
+    @include flex-row;
+  }
+}

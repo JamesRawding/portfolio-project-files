@@ -1,0 +1,127 @@
+{% block content %}
+<button id="dsMenuTrigger" class="showHideTrigger sidebar-nav-trigger cta cta--secondary margin-0-auto" type="button" name="button" aria-expanded="false">Design System Menu</button>
+<nav id="sidebarNav" class="showHide sidebar-nav">
+
+  <div id="accordionGroup" class="accordion">
+    <strong>
+      <button aria-expanded="false"
+              class="accordion__trigger"
+              aria-controls="sect1"
+              id="accordion1id">
+        <span class="accordion__title">
+          Design
+          <span class="accordion__icon"></span>
+        </span>
+      </button>
+    </strong>
+    <div id="sect1"
+         role="region"
+         aria-labelledby="accordion1id"
+         class="accordion__panel"
+         hidden="">
+      <div>
+        <ul class="padding-bottom-l">
+          <li>
+            <a class="reverse-link" href="/design-system/design/colour-scheme.html">Colour Scheme</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/design/flex.html">Flex</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/design/grid.html">Grid</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/design/spacing.html">Spacing</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/design/typography.html">Typography</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <strong>
+      <button aria-expanded="false"
+              class="accordion__trigger"
+              aria-controls="sect2"
+              id="accordion2id">
+        <span class="accordion__title">
+          Components
+          <span class="accordion__icon"></span>
+        </span>
+      </button>
+    </strong>
+    <div id="sect2"
+         role="region"
+         aria-labelledby="accordion2id"
+         class="accordion__panel"
+         hidden="">
+      <div>
+        <ul class="padding-bottom-l">
+          <li>
+            <a class="reverse-link" href="/design-system/components/accordion.html">Accordion</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/components/buttons-and-links.html">Buttons &amp; Links</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="/design-system/components/cards.html">Cards</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <strong>
+      <button aria-expanded="false"
+              class="accordion__trigger"
+              aria-controls="sect3"
+              id="accordion3id">
+        <span class="accordion__title">
+          Utilities
+          <span class="accordion__icon"></span>
+        </span>
+      </button>
+    </strong>
+    <div id="sect3"
+         role="region"
+         aria-labelledby="accordion3id"
+         class="accordion__panel"
+         hidden="">
+      <div>
+        <ul class="padding-bottom-l">
+          <li>
+            <a class="reverse-link" href="/design-system/utilities/helper-classes.html">Helper Classes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <strong>
+      <button aria-expanded="false"
+              class="accordion__trigger"
+              aria-controls="sect4"
+              id="accordion4id">
+        <span class="accordion__title">
+          Resources
+          <span class="accordion__icon"></span>
+        </span>
+      </button>
+    </strong>
+    <div id="sect4"
+         role="region"
+         aria-labelledby="accordion4id"
+         class="accordion__panel"
+         hidden="">
+      <div>
+        <ul class="padding-bottom-l">
+          <li>
+            <a class="reverse-link" href="https://www.aremycolorsaccessible.com/palette">Aremycolorsaccessible.com</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a>
+          </li>
+          <li>
+            <a class="reverse-link" href="https://www.webpagetest.org/">Webpagetest.org</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+{% endblock %}

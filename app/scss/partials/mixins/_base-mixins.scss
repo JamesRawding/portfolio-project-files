@@ -1,0 +1,60 @@
+@mixin un-ios{
+	-webkit-appearance: none;
+}
+
+@mixin focus{
+  outline-color: $focus;
+}
+
+@mixin transition-all{
+  transition: .25s all ease-in-out;
+}
+
+@mixin transition-bg{
+  transition: .25s background-color ease-in-out;
+}
+
+@mixin transition-fill{
+  transition: .25s fill ease-in-out;
+}
+
+@mixin transition-color{
+  transition: .25s color ease-in-out;
+}
+
+@mixin border-radius{
+  border-radius: rem(3);
+}
+
+@mixin background-light{
+  background-color: $light;
+  color: $dark;
+}
+
+@mixin background-dark{
+  background-color: $dark;
+  color: $light;
+}
+
+@mixin background-medium{
+  background-color: $medium;
+  color: $light;
+}
+
+@mixin background-grey{
+  background-color: $grey;
+  color: $dark;
+}
+
+@mixin background-yellow{
+  background-color: yellow;
+  color: $dark;
+}
+
+@mixin bold{
+	font-weight: 600;
+}
+
+@mixin box-shadow{
+	box-shadow: 0 0 rem(16) 0 rgba(89,89,89,.2);
+}

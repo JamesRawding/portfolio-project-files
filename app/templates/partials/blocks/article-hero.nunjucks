@@ -1,0 +1,9 @@
+{% block content %}
+  <section class="hero hero--with-copy">
+    <div class="container section-padding">
+      <h1>{{hero_heading}}</h1>
+      <p>{{hero_copy}}</p>
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,135 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/a11y-dark.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Components</span>
+      <h1>Cards</h1>
+      <p>Used to group small pieces of relevant information.</p>
+
+      <h2>Light Cards</h2>
+      <div class="card-medium grid-parent grid-parent--sm-6-6 margin-top-m">
+        <div class="card-light">
+          Card
+        </div>
+        <div class="card-light">
+          Card
+        </div>
+      </div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;card-light&quot;&gt;
+    Card
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+<hr class="hr-lg-spacing">
+<h2>Cards With Shadow</h2>
+<div class="card-light grid-parent grid-parent--sm-6-6 margin-top-m">
+  <div class="card-light card-shadow">
+    Card
+  </div>
+  <div class="card-light card-shadow">
+    Card
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;card-light card-shadow&quot;&gt;
+    Card
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+<hr class="hr-lg-spacing">
+<h2>Medium Cards</h2>
+<div class="card-light card-shadow grid-parent grid-parent--sm-6-6 margin-top-m">
+  <div class="card-medium">
+    Card
+  </div>
+  <div class="card-medium">
+    Card
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;card-medium&quot;&gt;
+    Card
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+<hr class="hr-lg-spacing">
+<h2>Dark Cards</h2>
+<div class="card-light card-shadow grid-parent grid-parent--sm-6-6 margin-top-m">
+  <div class="card-dark">
+    Card
+  </div>
+  <div class="card-dark">
+    Card
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;card-dark&quot;&gt;
+    Card
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+<hr class="hr-lg-spacing">
+<h2>Grey Cards</h2>
+<div class="card-light card-shadow grid-parent grid-parent--sm-6-6 margin-top-m">
+  <div class="card-grey">
+    Card
+  </div>
+  <div class="card-grey">
+    Card
+  </div>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div class=&quot;card-grey&quot;&gt;
+    Card
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+      </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,5 @@
+.flex-align-end--xs{
+  @media(min-width:$break-xs){
+    @include align-end;
+  }
+}

@@ -1,0 +1,20 @@
+.card-medium{
+  @include card-medium;
+}
+
+.card-dark{
+  @include card-dark;
+}
+
+.card-light{
+  @include card-light;
+}
+
+.card-grey{
+  @include card-grey;
+}
+
+
+.card-shadow{
+  @include box-shadow;
+}

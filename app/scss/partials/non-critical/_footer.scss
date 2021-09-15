@@ -1,0 +1,32 @@
+footer{
+  @include background-dark;
+
+  .reverse-link{
+    @include transition-bg;
+    width: rem(44);
+    height: rem(44);
+    padding: 0;
+
+    svg{
+      @include transition-fill;
+      vertical-align: middle;
+      fill:$light;
+      width: rem(40);
+      height: rem(40);
+      margin:rem(2);
+    }
+
+    &:hover{
+      background-color: $light;
+      svg{
+        fill:$dark;
+      }
+    }
+  }
+
+  .margin-top-m{
+    @media(min-width:$break-md){
+      margin-top: 0;
+    }
+  }
+}

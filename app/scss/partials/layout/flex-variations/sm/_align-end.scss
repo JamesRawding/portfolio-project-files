@@ -1,0 +1,5 @@
+.flex-align-end--sm{
+  @media(min-width:$break-sm){
+    @include align-end;
+  }
+}

@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-lg){
+  .grid-parent{
+    &--lg-4-8{
+      @include four-eight;
+    }
+  }
+}

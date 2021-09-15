@@ -1,0 +1,308 @@
+$spacing-xxs: rem(2);
+$spacing-xs: rem(4);
+$spacing-s: rem(8);
+$spacing-m: rem(16);
+$spacing-l: rem(32);
+$spacing-xl: rem(64);
+$spacing-xxl: rem(128);
+
+@mixin margin-xxs{
+  margin: $spacing-xxs;
+}
+
+@mixin margin-xs{
+  margin: $spacing-xs;
+}
+
+@mixin margin-s{
+  margin: $spacing-s;
+}
+
+@mixin margin-m{
+  margin: $spacing-m;
+}
+
+@mixin margin-l{
+  margin: $spacing-l;
+}
+
+@mixin margin-xl{
+  margin: $spacing-xl;
+}
+
+@mixin margin-xxl{
+  margin: $spacing-xxl;
+}
+
+
+
+@mixin margin-top-xxs{
+  margin-top: $spacing-xxs;
+}
+
+@mixin margin-top-xs{
+  margin-top: $spacing-xs;
+}
+
+@mixin margin-top-s{
+  margin-top: $spacing-s;
+}
+
+@mixin margin-top-m{
+  margin-top: $spacing-m;
+}
+
+@mixin margin-top-l{
+  margin-top: $spacing-l;
+}
+
+@mixin margin-top-xl{
+  margin-top: $spacing-xl;
+}
+
+@mixin margin-top-xxl{
+  margin-top: $spacing-xxl;
+}
+
+
+@mixin margin-right-xxs{
+  margin-right: $spacing-xxs;
+}
+
+@mixin margin-right-xs{
+  margin-right: $spacing-xs;
+}
+
+@mixin margin-right-s{
+  margin-right: $spacing-s;
+}
+
+@mixin margin-right-m{
+  margin-right: $spacing-m;
+}
+
+@mixin margin-right-l{
+  margin-right: $spacing-l;
+}
+
+@mixin margin-right-xl{
+  margin-right: $spacing-xl;
+}
+
+@mixin margin-right-xxl{
+  margin-right: $spacing-xxl;
+}
+
+
+
+@mixin margin-bottom-xxs{
+  margin-bottom: $spacing-xxs;
+}
+
+@mixin margin-bottom-xs{
+  margin-bottom: $spacing-xs;
+}
+
+@mixin margin-bottom-s{
+  margin-bottom: $spacing-s;
+}
+
+@mixin margin-bottom-m{
+  margin-bottom: $spacing-m;
+}
+
+@mixin margin-bottom-l{
+  margin-bottom: $spacing-l;
+}
+
+@mixin margin-bottom-xl{
+  margin-bottom: $spacing-xl;
+}
+
+@mixin margin-bottom-xxl{
+  margin-bottom: $spacing-xxl;
+}
+
+
+@mixin margin-left-xxs{
+  margin-left: $spacing-xxs;
+}
+
+@mixin margin-left-xs{
+  margin-left: $spacing-xs;
+}
+
+@mixin margin-left-s{
+  margin-left: $spacing-s;
+}
+
+@mixin margin-left-m{
+  margin-left: $spacing-m;
+}
+
+@mixin margin-left-l{
+  margin-left: $spacing-l;
+}
+
+@mixin margin-left-xl{
+  margin-left: $spacing-xl;
+}
+
+@mixin margin-left-xxl{
+  margin-left: $spacing-xxl;
+}
+
+
+
+
+@mixin padding-xxs{
+  padding: $spacing-xxs;
+}
+
+@mixin padding-xs{
+  padding: $spacing-xs;
+}
+
+@mixin padding-s{
+  padding: $spacing-s;
+}
+
+@mixin padding-m{
+  padding: $spacing-m;
+}
+
+@mixin padding-l{
+  padding: $spacing-l;
+}
+
+@mixin padding-xl{
+  padding: $spacing-xl;
+}
+
+@mixin padding-xxl{
+  padding: $spacing-xxl;
+}
+
+
+@mixin padding-top-xxs{
+  padding-top: $spacing-xxs;
+}
+
+@mixin padding-top-xs{
+  padding-top: $spacing-xs;
+}
+
+@mixin padding-top-s{
+  padding-top: $spacing-s;
+}
+
+@mixin padding-top-m{
+  padding-top: $spacing-m;
+}
+
+@mixin padding-top-l{
+  padding-top: $spacing-l;
+}
+
+@mixin padding-top-xl{
+  padding-top: $spacing-xl;
+}
+
+@mixin padding-top-xxl{
+  padding-top: $spacing-xxl;
+}
+
+
+
+@mixin padding-right-xxs{
+  padding-right: $spacing-xxs;
+}
+
+@mixin padding-right-xs{
+  padding-right: $spacing-xs;
+}
+
+@mixin padding-right-s{
+  padding-right: $spacing-s;
+}
+
+@mixin padding-right-m{
+  padding-right: $spacing-m;
+}
+
+@mixin padding-right-l{
+  padding-right: $spacing-l;
+}
+
+@mixin padding-right-xl{
+  padding-right: $spacing-xl;
+}
+
+@mixin padding-right-xxl{
+  padding-right: $spacing-xxl;
+}
+
+@mixin padding-bottom-xxs{
+  padding-bottom: $spacing-xxs;
+}
+
+@mixin padding-bottom-xs{
+  padding-bottom: $spacing-xs;
+}
+
+@mixin padding-bottom-s{
+  padding-bottom: $spacing-s;
+}
+
+@mixin padding-bottom-m{
+  padding-bottom: $spacing-m;
+}
+
+@mixin padding-bottom-l{
+  padding-bottom: $spacing-l;
+}
+
+@mixin padding-bottom-xl{
+  padding-bottom: $spacing-xl;
+}
+
+@mixin padding-bottom-xxl{
+  padding-bottom: $spacing-xxl;
+}
+
+
+@mixin padding-left-xxs{
+  padding-left: $spacing-xxs;
+}
+
+@mixin padding-left-xs{
+  padding-left: $spacing-xs;
+}
+
+@mixin padding-left-s{
+  padding-left: $spacing-s;
+}
+
+@mixin padding-left-m{
+  padding-left: $spacing-m;
+}
+
+@mixin padding-left-l{
+  padding-left: $spacing-l;
+}
+
+@mixin padding-left-xl{
+  padding-left: $spacing-xl;
+}
+
+@mixin padding-left-xxl{
+  padding-left: $spacing-xxl;
+}
+
+@mixin card-padding{
+  padding: $spacing-l $spacing-m;
+
+  @media(min-width:$break-md){
+    @include padding-l;
+  }
+}

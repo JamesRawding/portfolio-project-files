@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-lg){
+  .grid-parent{
+    &--lg-4-4-4{
+        @include four-four-four;
+    }
+  }
+}

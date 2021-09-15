@@ -1,0 +1,97 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/a11y-dark.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Components</span>
+      <h1>Accordion</h1>
+      <p>An accordion can be used to hide content and make it more digestible to the user.</p>
+      <div id="accordionGroup1" class="accordion margin-top-l">
+        <h3>
+          <button aria-expanded="false" class="accordion__trigger" aria-controls="sect11" id="accordion11id">
+            <span class="accordion__title">
+              Collapsable Content
+              <span class="accordion__icon"></span>
+            </span>
+          </button>
+        </h3>
+        <div id="sect11" role="region" aria-labelledby="accordion11id" class="accordion__panel" hidden="">
+          <div>
+            <p>Hidden Content</p>
+          </div>
+        </div>
+        <h3>
+          <button aria-expanded="false" class="accordion__trigger" aria-controls="sect12" id="accordion12id">
+            <span class="accordion__title">
+              Collapsable Content
+              <span class="accordion__icon"></span>
+            </span>
+          </button>
+        </h3>
+        <div id="sect12" role="region" aria-labelledby="accordion12id" class="accordion__panel" hidden="">
+          <div>
+            <p>Hidden Content</p>
+          </div>
+        </div>
+      </div>
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;div id=&quot;accordionGroup1&quot; class=&quot;accordion margin-top-l&quot;&gt;
+    &lt;h3&gt;
+      &lt;button aria-expanded=&quot;false&quot; class=&quot;accordion__trigger&quot; aria-controls=&quot;sect11&quot; id=&quot;accordion11id&quot;&gt;
+        &lt;span class=&quot;accordion__title&quot;&gt;
+          Collapsable Content
+          &lt;span class=&quot;accordion__icon&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;sect11&quot; role=&quot;region&quot; aria-labelledby=&quot;accordion11id&quot; class=&quot;accordion__panel&quot; hidden=&quot;&quot;&gt;
+      &lt;div&gt;
+        &lt;p&gt;Hidden Content&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;
+      &lt;button aria-expanded=&quot;false&quot; class=&quot;accordion__trigger&quot; aria-controls=&quot;sect12&quot; id=&quot;accordion12id&quot;&gt;
+        &lt;span class=&quot;accordion__title&quot;&gt;
+          Collapsable Content
+          &lt;span class=&quot;accordion__icon&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;sect12&quot; role=&quot;region&quot; aria-labelledby=&quot;accordion12id&quot; class=&quot;accordion__panel&quot; hidden=&quot;&quot;&gt;
+      &lt;div&gt;
+        &lt;p&gt;Hidden Content&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+</div>
+
+      </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}

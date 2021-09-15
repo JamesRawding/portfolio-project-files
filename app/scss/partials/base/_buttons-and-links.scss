@@ -1,0 +1,52 @@
+button:focus{
+  @include focus;
+}
+
+button{
+  @include un-ios;
+  cursor: pointer;
+}
+
+.default-link{
+  @include default-link;
+}
+
+.reverse-link{
+  @include reverse-link;
+}
+
+a{
+  font-size: inherit;
+}
+
+a:focus{
+  @include focus;
+}
+
+.cta{
+  @include cta;
+
+  &--primary{
+    @include cta--primary;
+  }
+
+  &--secondary{
+    @include cta--secondary;
+  }
+
+  &--tertiary{
+    @include cta--tertiary;
+  }
+
+  &--yellow{
+    @include cta--yellow;
+  }
+}
+
+.header-nav__trigger{
+  @include nav-trigger;
+}
+
+.close-modal-btn{
+  @include close-modal-btn;
+}

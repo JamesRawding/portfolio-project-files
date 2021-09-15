@@ -1,0 +1,105 @@
+{% set page_title = "Design System - James Rawding" %}
+{% set page_description = "The home of all the components" %}
+{% set nav_class = "ds-pages-active" %}
+
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/design-system/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/design-system/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/a11y-dark.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<main id="main-content">
+  <div class="container full-height grid-parent grid-parent--med-3-9">
+    <div class="background-medium sidebar-nav-container">
+      {% include "partials/functional/sidebar-nav.nunjucks" %}
+    </div>
+    <section class="background-light section-padding">
+      <span class="copy-small color-medium">Components</span>
+      <h1>Buttons &amp; Links</h1>
+      <p>Used to navigate the site or perform actions.</p>
+
+      <h2>Buttons</h2>
+      <p>Buttons are to be used to perform an action on a page and not to navigate to other pages.</p>
+
+      <h3>Primary CTA</h3>
+      <div class="card-light card-shadow margin-top-m">
+        <button class="cta cta--primary" type="button" name="button">Button</button>
+      </div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;button class=&quot;cta cta--primary&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;Button&lt;/button&gt;
+  </code>
+</pre>
+</div>
+
+      <h3 class="margin-top-xl">Secondary CTA</h3>
+      <div class="card-medium margin-top-m">
+        <button class="cta cta--secondary" type="button" name="button">Button</button>
+      </div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;button class=&quot;cta cta--secondary&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;Button&lt;/button&gt;
+  </code>
+</pre>
+</div>
+
+<h3 class="margin-top-xl">Tertiary CTA</h3>
+<div class="card-light card-shadow margin-top-m">
+  <button class="cta cta--tertiary" type="button" name="button">Button</button>
+</div>
+
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;button class=&quot;cta cta--tertiary&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;Button&lt;/button&gt;
+  </code>
+</pre>
+</div>
+
+<hr class="hr-lg-spacing">
+
+<h2>Links</h2>
+<p>Links are used to navigate around the site or onto other websites. If a button is required to perform an action on a page but a CTA would be too visually loud a button that is styled like a link can be used.</p>
+
+<h3>Default Link</h3>
+<div class="card-light card-shadow  margin-top-m">
+  <a class="default-link" href="#">Link</a>
+</div>
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;a class=&quot;default-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+  </code>
+</pre>
+</div>
+
+<h3 class="margin-top-xl">Reverse Link</h3>
+<div class="card-medium margin-top-m">
+  <a class="reverse-link" href="#">Link</a>
+</div>
+<div class="example-container">
+<pre>
+  <code class="html">
+  &lt;a class=&quot;reverse-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+  </code>
+</pre>
+</div>
+      </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}

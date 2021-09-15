@@ -1,0 +1,5 @@
+.flex-justify-start--med{
+  @media(min-width:$break-md){
+    @include justify-start;
+  }
+}

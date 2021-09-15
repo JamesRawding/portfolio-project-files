@@ -1,0 +1,7 @@
+@media screen and (min-width:$break-xs){
+  .grid-parent{
+    &--xs-7-5{
+        @include seven-five;
+    }
+  }
+}

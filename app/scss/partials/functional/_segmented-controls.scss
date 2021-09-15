@@ -1,0 +1,73 @@
+.segmented-controls{
+  @include flex-row;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:horizontal {
+      height: 0;
+  }
+
+
+  @media(min-width:$break-lg){
+    -ms-overflow-style: none;  /* IE and Edge */
+    -ms-overflow-style:-ms-autohiding-scrollbar;  /* IE and Edge */
+    scrollbar-color:  $accent $light;
+    scrollbar-width: thin;
+
+
+
+
+    &::-webkit-scrollbar:vertical {
+        width: rem(10);
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        height: rem(10);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: rem(10);
+        border: rem(2) solid white; /* should match background, can't be transparent */
+        background-color: $accent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $light;
+        border-radius: rem(10);
+    }
+  }
+
+  &__btn{
+    @include cta;
+    @include cta--tertiary;
+    border-radius: 0;
+
+    &[aria-selected="true"]{
+      background-color: $medium;
+      color: $light;
+    }
+
+    &:first-of-type{
+      border-top-left-radius: rem(3);
+      border-bottom-left-radius: rem(3);
+      border-right: none;
+    }
+
+    &:last-of-type{
+      border-top-right-radius: rem(3);
+      border-bottom-right-radius: rem(3);
+    }
+
+  }
+
+}
+
+
+.segmented-control-panel{
+  @include margin-top-l;
+
+  &:focus{
+    @include focus;
+  }
+}

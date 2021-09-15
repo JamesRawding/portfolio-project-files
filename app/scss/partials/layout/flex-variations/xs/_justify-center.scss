@@ -1,0 +1,5 @@
+.flex-justify-center--xs{
+  @media(min-width:$break-xs){
+    @include justify-center;
+  }
+}
