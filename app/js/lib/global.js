@@ -30,9 +30,3 @@ document.addEventListener('keydown', function(e) {
 });
 
 firstFocusableElement.focus();
-
-// Remove focus state on mouseleave and touchend
-function mouseIsOut(el) {
-  el.on('mouseleave touchend', function() {
-  });
-}

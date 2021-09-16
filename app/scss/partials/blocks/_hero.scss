@@ -1,14 +1,18 @@
 .hero{
-  background-color: $dark;
   color: $light;
   position: relative;
-  padding: $spacing-s 0 $spacing-l 0;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 
-  @media(min-width:$break-md){
-    padding: rem(70) 0 rem(120) 0;
 
+  &__inner{
+    background-color: $dark;
+    padding: $spacing-s 0 $spacing-l 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    @media(min-width:$break-md){
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+      padding: rem(70) 0 rem(120) 0;
+    }
   }
+
   span{
     @include margin-top-s;
     line-height: 1.2;
@@ -26,23 +30,44 @@
     color: $grey;
   }
 
+  &__image-container{
+    background-color: transparent !important;
+
+    *{
+      background-color: transparent !important;
+    }
+
+    @media(min-width:$break-md){
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 1;
+      bottom: 0;
+      top: 0;
+      @include padding-right-l;
+    }
+  }
+
+  &__image-wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: $spacing-l;
+  }
+
   img{
     display: none;
 
     @media(min-width:$break-md){
       display: block;
-      position: absolute;
-      right: 5%;
-      top:0;
+      max-height: 90%;
+      @include border-radius;
+      @include box-shadow;
     }
 
-  }
-
-  &--with-copy{
-    clip-path:none;
-    @media(min-width:$break-md){
-      clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-    }
   }
 
 }

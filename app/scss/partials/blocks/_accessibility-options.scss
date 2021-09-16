@@ -107,6 +107,14 @@
   .skip-navigation-link{
     color: $dark;
   }
+
+  .hero p{
+    color: $light;
+  }
+
+  .hero span{
+    color: $light;
+  }
 }
 
 .accessibility-color-light{
@@ -203,7 +211,17 @@
     color: $dark;
   }
 
-  .desktop-logo svg text{
+  .logo svg{
+    circle{
+      fill:$dark;
+    }
+    path,
+    rect{
+      fill:$light;
+    }
+  }
+
+  .logo--desktop svg path{
     fill:$dark;
   }
 
@@ -218,6 +236,14 @@
 
   footer .reverse-link svg{
     fill:$dark;
+  }
+
+  .hero p{
+    color: $dark;
+  }
+
+  .hero span{
+    color: $dark;
   }
 }
 
@@ -318,19 +344,21 @@
     }
   }
 
-  .desktop-logo svg text{
-    fill:$dark;
+  .logo{
+    svg{
+      circle{
+        fill:$dark;
+      }
+
+      path,
+      rect{
+        fill:yellow;
+      }
+    }
   }
 
-  .mobile-logo svg{
-    circle{
-      fill:$dark;
-    }
-
-    path,
-    rect{
-      fill:yellow;
-    }
+  .logo--desktop svg path{
+    fill:$dark;
   }
 
   footer .reverse-link svg{
@@ -348,6 +376,14 @@
     span{
       color: yellow;
     }
+  }
+
+  .hero p{
+    color: $dark;
+  }
+
+  .hero span{
+    color: $dark;
   }
 }
 

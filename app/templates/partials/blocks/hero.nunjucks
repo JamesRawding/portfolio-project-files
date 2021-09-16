@@ -1,0 +1,23 @@
+{% block content %}
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="container section-padding grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
+        <div>
+          <h1>{{hero_heading}}</h1>
+          <p><strong>{{hero_copy_first}}</strong></p>
+          <p>{{hero_copy}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image-container container grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
+      <span></span>
+      <div class="position-relative">
+        <div class="flex-row flex-justify-end flex-align-center  hero__image-wrap">
+          <img src="/images/lighthouse-2.png" alt="">
+          {# <img src="https://res.cloudinary.com/dgddraffq/image/upload/f_auto,q_auto/v1631718489/hero-alt_kqwyst.jpg" alt=""> #}
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

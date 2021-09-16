@@ -9,21 +9,18 @@
     }
   }
 
-  .mobile-logo{
-    @media(min-width:$break-md){
-      display:none;
-    }
-  }
+  // .mobile-logo{
+  //   @media(min-width:$break-md){
+  //     display:none;
+  //   }
+  // }
 
-  .desktop-logo{
+  .logo--desktop{
     display: none;
     @media(min-width:$break-md){
+      padding-top: rem(10);
       display: block;
-
-      a{
-        @include padding-top-s;
-        @include padding-bottom-s;
-      }
+      @include margin-left-m;
     }
   }
 }

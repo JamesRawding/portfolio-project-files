@@ -1,5 +1,5 @@
 {% block content %}
-<button id="dsMenuTrigger" class="showHideTrigger sidebar-nav-trigger cta cta--secondary margin-0-auto" type="button" name="button" aria-expanded="false">Design System Menu</button>
+<button id="dsMenuTrigger" class="showHideTrigger sidebar-nav-trigger cta cta--secondary" type="button" name="button" aria-expanded="false">Design System Menu</button>
 <nav id="sidebarNav" class="showHide sidebar-nav">
 
   <div id="accordionGroup" class="accordion">

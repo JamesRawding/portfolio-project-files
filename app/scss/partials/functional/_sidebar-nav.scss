@@ -20,6 +20,7 @@
 }
 
 .sidebar-nav-trigger{
+  margin: 0 auto;
   @media(min-width:$break-md){
     display: none;
   }

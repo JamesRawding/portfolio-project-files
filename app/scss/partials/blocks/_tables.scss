@@ -43,6 +43,10 @@ table{
     @include focus;
   }
 
+  &:focus:not(:focus-visible){
+    outline: none;
+  }
+
   thead{
 
 

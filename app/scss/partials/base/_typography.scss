@@ -45,6 +45,14 @@ p{
   }
 }
 
+ul + p{
+  @include margin-top-l;
+
+  @media(moin-width:$break-md){
+    @include margin-top-xl;
+  }
+}
+
 h1,
 .h1{
   @include h1-mobile;

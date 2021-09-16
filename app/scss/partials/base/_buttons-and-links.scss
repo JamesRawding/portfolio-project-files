@@ -2,6 +2,10 @@ button:focus{
   @include focus;
 }
 
+button:focus:not(:focus-visible){
+  outline: none;
+}
+
 button{
   @include un-ios;
   cursor: pointer;
@@ -21,6 +25,10 @@ a{
 
 a:focus{
   @include focus;
+}
+
+a:focus:not(:focus-visible){
+  outline: none;
 }
 
 .cta{
