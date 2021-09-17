@@ -3,7 +3,7 @@
 {% set hero_heading = "Experience" %}
 {% set hero_subheading = "Designing with the user in mind" %}
 {% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
-{% set hero_image_src = 'https://res.cloudinary.com/dgddraffq/image/upload/f_auto,q_auto/v1631802864/experience-hero_yrrduo.jpg' %}
+{% set hero_image_src = 'https://res.cloudinary.com/dgddraffq/image/upload/v1631808292/sketch-hero_wz12bv.jpg' %}
 {% set hero_image_alt = '' %}
 {% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
 

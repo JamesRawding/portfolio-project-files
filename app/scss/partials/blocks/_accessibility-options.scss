@@ -47,6 +47,8 @@
 
   .header-nav__primary-desktop-nav-item:hover{
     border-color: $light;
+    background-color: transparent;
+    color: $light;
   }
 
   .header-nav__primary-desktop-nav-item{
@@ -145,6 +147,12 @@
 
   .header-nav__primary-desktop-nav-item{
     border-color: transparent;
+  }
+
+  .header-nav__primary-desktop-nav-item:hover{
+    border-color: $dark;
+    background-color: transparent;
+    color: $dark;
   }
 
   .dev-pages-active li:last-of-type,
@@ -285,6 +293,12 @@
     color: $dark;
   }
 
+  .header-nav__primary-desktop-nav-item:hover{
+    border-color: $dark;
+    background-color: transparent;
+    color: $dark;
+  }
+
   .dev-pages-active li:last-of-type,
   .exp-pages-active li:last-of-type,
   .ds-pages-active li:last-of-type{
@@ -390,9 +404,23 @@
 .accessibility-font-l{
   font-size: 27px;
 
+  h1,
+  .h1{
+    @include font-size-xxl-desktop;
+  }
+
+  h2,
+  .h2{
+    @include font-size-xl-desktop;
+  }
+
+  h3,
+  .h3{
+    @include font-size-l-desktop;
+  }
+
   .sidebar-nav ul{
     font-size: inherit;
-
   }
 
   .copy-small{
@@ -406,6 +434,21 @@
 
 .accessibility-font-xl{
   font-size: 34px;
+
+  h1,
+  .h1{
+    @include font-size-xxl-desktop;
+  }
+
+  h2,
+  .h2{
+    @include font-size-xxl-desktop;
+  }
+
+  h3,
+  .h3{
+    @include font-size-xl-desktop;
+  }
 
   .sidebar-nav ul{
     font-size: inherit;

@@ -45,7 +45,7 @@ document.getElementById('colorDark').onclick = function(){
   body.classList.remove('accessibility-color-light');
   body.classList.remove('accessibility-color-yellow');
 
-  document.cookie = "color_class=dark; Path=/; SameSite=None; Secure";
+  document.cookie = "color_class=dark; Path=/; ";
 
 }
 
@@ -54,7 +54,7 @@ document.getElementById('colorLight').onclick = function(){
   body.classList.remove('accessibility-color-dark');
   body.classList.remove('accessibility-color-yellow');
 
-  document.cookie = "color_class=light; Path=/; SameSite=None; Secure";
+  document.cookie = "color_class=light; Path=/;";
 }
 
 document.getElementById('colorYellow').onclick = function(){
@@ -62,21 +62,21 @@ document.getElementById('colorYellow').onclick = function(){
   body.classList.remove('accessibility-color-dark');
   body.classList.remove('accessibility-color-light');
 
-  document.cookie = "color_class=yellow; Path=/; SameSite=None; Secure";
+  document.cookie = "color_class=yellow; Path=/; ";
 }
 
 document.getElementById('fontSizeLarge').onclick = function(){
   body.classList.add('accessibility-font-l');
   body.classList.remove('accessibility-font-xl');
 
-  document.cookie = "font_class=l; Path=/; SameSite=None; Secure";
+  document.cookie = "font_class=l; Path=/; ";
 }
 
 document.getElementById('fontSizeExtraLarge').onclick = function(){
   body.classList.add('accessibility-font-xl');
   body.classList.remove('accessibility-font-l');
 
-  document.cookie = "font_class=xl; Path=/; SameSite=None; Secure";
+  document.cookie = "font_class=xl; Path=/;";
 }
 
 docReady(function(){
