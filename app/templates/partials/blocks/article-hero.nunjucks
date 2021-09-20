@@ -12,7 +12,7 @@
     <div class="hero__image-container container grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">
       <span></span>
       <div class="flex-row flex-justify-end flex-align-center hero__image-wrap">
-        <img  src="{{hero_image_src}}" alt="{{hero_img_alt}}">
+        <img loading="lazy" src="{{hero_image_src}}" alt="{{hero_img_alt}}">
       </div>
     </div>
   </section>
