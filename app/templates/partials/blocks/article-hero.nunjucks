@@ -7,6 +7,7 @@
           <p><strong>{{hero_copy_first}}</strong></p>
           <p>{{hero_copy}}</p>
         </div>
+        <span></span>
       </div>
     </div>
     <div class="hero__image-container container grid-parent grid-parent--med-7-5 grid-parent--lg-6-6">

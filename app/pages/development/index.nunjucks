@@ -16,7 +16,7 @@
   {% include "partials/blocks/category-hero.nunjucks" %}
   <section class="small-container section-padding">
     <h2>What I do</h2>
-    <p>I create performant front end code using all the latest techniques to get every last bit of performance out of the page.</p>
+    <p>I create performant front end code using all the latest techniques to get every last bit of performance out of the page, for the benefit of the user.</p>
   </section>
   <hr class="small-container">
   <section class="small-container section-padding grid-parent grid-parent--med-4-4-4">
