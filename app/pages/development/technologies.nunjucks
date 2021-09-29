@@ -1,5 +1,6 @@
 {% set page_title = "James Rawding - Front-End Developer and Designer" %}
-{% set page_description = "TThe technologies I use to build websites" %}
+{% set page_description = "The technologies I use to build websites" %}
+{% set nav_class = "dev-pages-active" %}
 {% set hero_heading = "Technologies" %}
 {% set hero_copy_first = "I use various technologies/methodologies when developing sites, using the right tool for the problem." %}
 {% set hero_copy = "Here is a list of just a few of the ways I work:" %}

@@ -1,5 +1,6 @@
 {% set page_title = "James Rawding - Front-End Developer and Designer" %}
 {% set page_description = "Designing and buiding websites with accessibility in mind" %}
+{% set nav_class = "exp-pages-active" %}
 {% set hero_heading = "Accessibility" %}
 {% set hero_copy_first = "When it comes to design, accessibility shouldn’t be an afterthought. Any designs that are created with accessibility in mind will more than likely be helpful for all users, accessibility = usability." %}
 {% set hero_copy = "With that in mind here are just a few things I have done to create one of the most accessible websites in its sector." %}

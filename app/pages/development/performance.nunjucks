@@ -1,5 +1,6 @@
 {% set page_title = "James Rawding - Front-End Developer and Designer" %}
 {% set page_description = "Information on page speed optimisation" %}
+{% set nav_class = "dev-pages-active" %}
 {% set hero_heading = "Performance" %}
 {% set hero_copy_first = "There are various ways of improving page performance, but I’m not going to list all the things you can do, that’s what Harry Roberts is for!" %}
 {% set hero_copy = "Here are just a few techniques I have used in the past to turn a low performing website into one of the highest performing sites in its sector." %}

@@ -1,5 +1,6 @@
 {% set page_title = "James Rawding - Front-End Developer and Designer" %}
 {% set page_description = "How I design experiences" %}
+{% set nav_class = "exp-pages-active" %}
 {% set hero_heading = "Design Process" %}
 {% set hero_copy_first = "Design shouldn’t be based on assumption, it should be data driven and tested on real users, quickly and often throughout the design process. " %}
 {% set hero_copy = "Here are some of the techniques and methodologies that I use throughout the process." %}

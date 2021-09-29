@@ -1,5 +1,6 @@
 {% set page_title = "James Rawding - Front-End Developer and Designer" %}
 {% set page_description = "How I improve conversion on websites" %}
+{% set nav_class = "exp-pages-active" %}
 {% set hero_heading = "CRO" %}
 {% set hero_copy_first = "Testing is an integral way to make decisions, when making changes it is important to know they don’t have a negative impact on the user. " %}
 {% set hero_copy = "Useful insight can still be gained from a test whether there is a significant improvement to conversion or not. Improving the conversion of a site requires real world quantative data, below are some the ways to get that data." %}
