@@ -2,6 +2,10 @@
   color: $light;
   position: relative;
 
+  @media(min-width:$break-md){
+    margin-top: rem(-1);
+  }
+
 
   &__inner{
     background-color: $dark;
